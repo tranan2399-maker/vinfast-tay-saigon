@@ -1,0 +1,82 @@
+[
+  {
+    "id": "tay-sai-gon",
+    "name": "VinFast Tây Sài Gòn (Trụ sở chính)",
+    "address": "982 Tỉnh Lộ 10, Tân Tạo, TP. Hồ Chí Minh",
+    "hotline": "0933 792 866",
+    "map_url": "https://www.google.com/maps/search/982+Tỉnh+Lộ+10,+Tân+Tạo,+TP.+Hồ+Chí+Minh",
+    "is_headquarter": true
+  },
+  {
+    "id": "cn-nguyen-van-qua",
+    "name": "VinFast Tây Sài Gòn - CN Nguyễn Văn Quá",
+    "address": "361 Nguyễn Văn Quá, P. Đông Hưng Thuận, Quận 12, TP.HCM",
+    "hotline": "0933 792 866",
+    "map_url": "https://www.google.com/maps/search/361 Nguyễn Văn Quá, P. Đông Hưng Thuận, TP.HCM",
+    "is_headquarter": false
+  },
+  {
+    "id": "cn-le-van-quoi",
+    "name": "VinFast Tây Sài Gòn - CN Lê Văn Quới",
+    "address": "155 Lê Văn Quới, Bình Trị Đông, Bình Tân, TP.HCM",
+    "hotline": "0933 792 866",
+    "map_url": "https://www.google.com/maps/search/155 Lê Văn Quới, Bình Trị Đông, TP.HCM",
+    "is_headquarter": false
+  },
+  {
+    "id": "cn-au-co",
+    "name": "VinFast Tây Sài Gòn - CN Âu Cơ",
+    "address": "658 Âu Cơ, Bảy Hiền, Tân Bình, TP.HCM",
+    "hotline": "0933 792 866",
+    "map_url": "https://www.google.com/maps/search/658 Âu Cơ, Bảy Hiền, TP.HCM",
+    "is_headquarter": false
+  },
+  {
+    "id": "cn-tan-ky-tan-quy",
+    "name": "VinFast Tây Sài Gòn - CN Tân Kỳ Tân Quý",
+    "address": "274 Tân Kỳ Tân Quý, P. Tân Sơn Nhì, Tân Phú, TP.HCM",
+    "hotline": "0933 969 396",
+    "map_url": "https://www.google.com/maps/search/274 Tân Kỳ Tân Quý, P. Tân Sơn Nhì, TP.HCM",
+    "is_headquarter": false
+  },
+  {
+    "id": "cn-duong-so-3",
+    "name": "VinFast Tây Sài Gòn - CN Bình Tân",
+    "address": "229 Đường số 3 (Nguyễn Thị Tú), P. Bình Hưng Hòa B, Bình Tân, TP.HCM",
+    "hotline": "0933 792 866",
+    "map_url": "https://www.google.com/maps/search/229 Đường số 3, Bình Hưng Hòa B, Bình Tân, TP.HCM",
+    "is_headquarter": false
+  },
+  {
+    "id": "cn-hoa-binh",
+    "name": "VinFast Tây Sài Gòn - CN Hòa Bình",
+    "address": "212 Hoà Bình, Hiệp Tân, Tân Phú, TP.HCM",
+    "hotline": "0778 123 268",
+    "map_url": "https://www.google.com/maps/search/212 Hoà Bình, Tân Phú, TP.HCM",
+    "is_headquarter": false
+  },
+  {
+    "id": "cn-nguyen-van-luong",
+    "name": "VinFast Tây Sài Gòn - CN Quận 6",
+    "address": "256B-C Nguyễn Văn Luông, Phường 11, Quận 6, TP.HCM",
+    "hotline": "0961 79 79 28",
+    "map_url": "https://www.google.com/maps/search/256B-C Nguyễn Văn Luông, Quận 6, TP.HCM",
+    "is_headquarter": false
+  },
+  {
+    "id": "cn-pham-van-chieu",
+    "name": "VinFast Tây Sài Gòn - CN Gò Vấp",
+    "address": "165 Phạm Văn Chiêu, Phường 14, Gò Vấp, TP.HCM",
+    "hotline": "0933 831 866",
+    "map_url": "https://www.google.com/maps/search/165 Phạm Văn Chiêu, Gò Vấp, TP.HCM",
+    "is_headquarter": false
+  },
+  {
+    "id": "cn-pham-van-dong",
+    "name": "VinFast Tây Sài Gòn - CN Thủ Đức",
+    "address": "1236 Phạm Văn Đồng, P. Linh Tây, TP. Thủ Đức, TP.HCM",
+    "hotline": "079 8811 181",
+    "map_url": "https://www.google.com/maps/search/1236 Phạm Văn Đồng, Thủ Đức, TP.HCM",
+    "is_headquarter": false
+  }
+]

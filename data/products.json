@@ -1,0 +1,678 @@
+[
+  {
+    "id": "kinet",
+    "slug": "vinfast-kinet",
+    "name": "VinFast Kinet",
+    "category": "xe-may-cao-cap",
+    "category_name": "Xe Máy Điện Cao Cấp",
+    "tagline": "Siêu phẩm xe máy điện công nghệ tương lai - Thiết kế khí động học & Trợ lý ảo thông minh",
+    "price_text": "69.000.000 VNĐ",
+    "price_number": 69000000,
+    "badge": "Siêu Phẩm Flagship",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3f87e016/images/mega-menu/scooter/KINET.png",
+    "thumbnail_local": "assets/images/cars/vinfast-kinet-thumb.png",
+    "colors": [
+      {
+        "name": "Đen Titanium",
+        "code": "#1C2833",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3f87e016/images/mega-menu/scooter/KINET.png",
+        "img_local": "assets/images/cars/vinfast-kinet-thumb.png"
+      },
+      {
+        "name": "Xám Không Gian",
+        "code": "#707B7C",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3f87e016/images/mega-menu/scooter/KINET.png",
+        "img_local": "assets/images/cars/vinfast-kinet-thumb.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "Khoảng 180 km",
+      "Vận tốc tối đa": "99 km/h",
+      "Động cơ": "Center-motor 4.000 W (Cực đại 7.500 W)",
+      "Phanh an toàn": "Phanh ABS 2 kênh Bosch cao cấp",
+      "Công nghệ": "Màn hình kỹ thuật số TFT, eSIM kết nối 4G & Smartkey",
+      "Chuẩn chống nước": "IP67 an toàn lội nước 0.5m trong 30 phút"
+    }
+  },
+  {
+    "id": "theon-s",
+    "slug": "vinfast-theon-s",
+    "name": "VinFast Theon S",
+    "category": "xe-may-cao-cap",
+    "category_name": "Xe Máy Điện Cao Cấp",
+    "tagline": "Flagship xe máy điện bứt phá giới hạn - Động cơ đặt giữa 7.100W, phanh ABS 2 kênh",
+    "price_text": "63.000.000 VNĐ",
+    "price_number": 63000000,
+    "badge": "Đỉnh Cao Tốc Độ",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3f87e016/images/mega-menu/scooter/KINET.png",
+    "thumbnail_local": "assets/images/cars/vinfast-theon-s-color-2.png",
+    "colors": [
+      {
+        "name": "Đen Nhám Quyền Lực",
+        "code": "#1C2833",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3f87e016/images/mega-menu/scooter/KINET.png",
+        "img_local": "assets/images/cars/vinfast-theon-s-color-2.png"
+      },
+      {
+        "name": "Đỏ Mận Thể Thao",
+        "code": "#78281F",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3f87e016/images/mega-menu/scooter/KINET.png",
+        "img_local": "assets/images/cars/vinfast-theon-s-color-2.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "150 km / lần sạc",
+      "Vận tốc tối đa": "99 km/h",
+      "Động cơ": "Center-motor 3.500 W (Cực đại 7.100 W)",
+      "Phanh an toàn": "Phanh ABS 2 kênh Continental",
+      "Khoá thông minh": "P-Key & Smartkey Bluetooth",
+      "Chuẩn chống nước": "IP67 ngập nước không lo chết máy"
+    }
+  },
+  {
+    "id": "vento-s",
+    "slug": "vinfast-vento-s",
+    "name": "VinFast Vento S",
+    "category": "xe-may-cao-cap",
+    "category_name": "Xe Máy Điện Cao Cấp",
+    "tagline": "Xe máy điện thông minh đỉnh cao - Động cơ Side-motor đặt bên bốc lửa, công nghệ PAAK",
+    "price_text": "50.000.000 VNĐ",
+    "price_number": 50000000,
+    "badge": "Side-Motor Đặt Cạnh",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa2eb461f/images/mega-menu/scooter/KYO.png",
+    "thumbnail_local": "assets/images/cars/vinfast-vento-s-thumb.png",
+    "colors": [
+      {
+        "name": "Vàng Thời Thượng",
+        "code": "#F39C12",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa2eb461f/images/mega-menu/scooter/KYO.png",
+        "img_local": "assets/images/cars/vinfast-vento-s-thumb.png"
+      },
+      {
+        "name": "Cam Năng Động",
+        "code": "#E67E22",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa2eb461f/images/mega-menu/scooter/KYO.png",
+        "img_local": "assets/images/cars/vinfast-vento-s-thumb.png"
+      },
+      {
+        "name": "Trắng Tinh Tế",
+        "code": "#FFFFFF",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa2eb461f/images/mega-menu/scooter/KYO.png",
+        "img_local": "assets/images/cars/vinfast-vento-s-thumb.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "160 km / lần sạc",
+      "Vận tốc tối đa": "89 km/h",
+      "Động cơ": "Side-motor 3.000 W (Cực đại 5.200 W)",
+      "Phanh an toàn": "Phanh đĩa chống bó cứng ABS",
+      "Khoá thông minh": "Smartkey & PAAK qua Smartphone",
+      "Chuẩn chống nước": "IP67"
+    }
+  },
+  {
+    "id": "verox",
+    "slug": "vinfast-verox",
+    "name": "VinFast Vero X",
+    "category": "xe-may-cao-cap",
+    "category_name": "Xe Máy Điện Cao Cấp",
+    "tagline": "Chiến binh xe máy điện thể thao cá tính mạnh mẽ - Cốp 35L siêu lớn, bứt phá mọi hành trình",
+    "price_text": "35.000.000 VNĐ",
+    "price_number": 35000000,
+    "badge": "Cốp Khủng 35L",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3bf5d0be/images/mega-menu/scooter/VeroX.png",
+    "thumbnail_local": "assets/images/cars/vinfast-verox-color-3.png",
+    "colors": [
+      {
+        "name": "Xanh Rêu Thể Thao",
+        "code": "#27AE60",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3bf5d0be/images/mega-menu/scooter/VeroX.png",
+        "img_local": "assets/images/cars/vinfast-verox-color-3.png"
+      },
+      {
+        "name": "Xanh Oliu",
+        "code": "#5B7065",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3bf5d0be/images/mega-menu/scooter/VeroX.png",
+        "img_local": "assets/images/cars/vinfast-verox-color-3.png"
+      },
+      {
+        "name": "Đen Nhám Nam Tính",
+        "code": "#1C2833",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3bf5d0be/images/mega-menu/scooter/VeroX.png",
+        "img_local": "assets/images/cars/vinfast-verox-color-3.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "Khoảng 170 km",
+      "Vận tốc tối đa": "78 km/h",
+      "Thể tích cốp": "35 Lít siêu lớn chứa cả balo laptop",
+      "Khoảng sáng gầm": "145 mm",
+      "Chuẩn chống nước": "IP67 an tâm mùa mưa ngập TP.HCM"
+    }
+  },
+  {
+    "id": "viper",
+    "slug": "vinfast-viper",
+    "name": "VinFast Viper",
+    "category": "xe-may-cao-cap",
+    "category_name": "Xe Máy Điện Cao Cấp",
+    "tagline": "Chiến mã đường phố thế hệ mới - Cơ chế đổi pin siêu tốc, vận hành uy lực",
+    "price_text": "35.000.000 VNĐ",
+    "price_number": 35000000,
+    "badge": "Đổi Pin Nhanh",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw7111b9f7/images/mega-menu/scooter/Viper.png",
+    "thumbnail_local": "assets/images/cars/vinfast-viper-color-2.png",
+    "colors": [
+      {
+        "name": "Đen Bóng",
+        "code": "#17202A",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw7111b9f7/images/mega-menu/scooter/Viper.png",
+        "img_local": "assets/images/cars/vinfast-viper-color-2.png"
+      },
+      {
+        "name": "Xám Khói Kim Loại",
+        "code": "#707B7C",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw7111b9f7/images/mega-menu/scooter/Viper.png",
+        "img_local": "assets/images/cars/vinfast-viper-color-2.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "Khoảng 165 km",
+      "Vận tốc tối đa": "80 km/h",
+      "Kích thước D x R x C": "1.907 x 692 x 1.135 mm",
+      "Chiều cao yên": "780 mm",
+      "Khoảng sáng gầm": "138 mm",
+      "Chuẩn chống nước": "IP67"
+    }
+  },
+  {
+    "id": "kyo",
+    "slug": "vinfast-kyo",
+    "name": "VinFast Kyo",
+    "category": "xe-may-cao-cap",
+    "category_name": "Xe Máy Điện Cao Cấp",
+    "tagline": "Thời trang thế hệ mới 2026 - Đường nét sắc sảo thanh thoát, trải nghiệm lái đầm chắc",
+    "price_text": "30.000.000 VNĐ",
+    "price_number": 30000000,
+    "badge": "Thiết Kế Mới 2026",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa2eb461f/images/mega-menu/scooter/KYO.png",
+    "thumbnail_local": "assets/images/cars/vinfast-kyo-color-2.png",
+    "colors": [
+      {
+        "name": "Trắng Tuyết",
+        "code": "#F4F6F6",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa2eb461f/images/mega-menu/scooter/KYO.png",
+        "img_local": "assets/images/cars/vinfast-kyo-color-2.png"
+      },
+      {
+        "name": "Đỏ Rực Rỡ",
+        "code": "#C0392B",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa2eb461f/images/mega-menu/scooter/KYO.png",
+        "img_local": "assets/images/cars/vinfast-kyo-color-2.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "Khoảng 175 km",
+      "Vận tốc tối đa": "78 km/h",
+      "Kích thước D x R x C": "1.999 x 694 x 1.130 mm",
+      "Chiều cao yên": "785 mm",
+      "Khoảng sáng gầm": "160 mm",
+      "Chuẩn chống nước": "IP67"
+    }
+  },
+  {
+    "id": "feliz-2027",
+    "slug": "vinfast-feliz-2027",
+    "name": "VinFast Feliz 2027",
+    "category": "xe-may-trung-cap",
+    "category_name": "Xe Máy Điện Trung Cấp",
+    "tagline": "Phiên bản nâng cấp Feliz 2027 toàn diện - Đèn LED pha kép hiện đại & Khung gầm chịu lực gia cường",
+    "price_text": "29.900.000 VNĐ",
+    "price_number": 29900000,
+    "badge": "Phiên Bản Nâng Cấp",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0c43a3de/images/mega-menu/scooter/Feliz-2027.png",
+    "thumbnail_local": "assets/images/cars/vinfast-feliz-2027-thumb.png",
+    "colors": [
+      {
+        "name": "Xanh Đại Dương",
+        "code": "#1B4F72",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0c43a3de/images/mega-menu/scooter/Feliz-2027.png",
+        "img_local": "assets/images/cars/vinfast-feliz-2027-thumb.png"
+      },
+      {
+        "name": "Trắng Ngọc Trai",
+        "code": "#FBFCFC",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0c43a3de/images/mega-menu/scooter/Feliz-2027.png",
+        "img_local": "assets/images/cars/vinfast-feliz-2027-thumb.png"
+      },
+      {
+        "name": "Đen Mờ Thể Thao",
+        "code": "#2C3E50",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0c43a3de/images/mega-menu/scooter/Feliz-2027.png",
+        "img_local": "assets/images/cars/vinfast-feliz-2027-thumb.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "205 km / lần sạc",
+      "Vận tốc tối đa": "80 km/h",
+      "Thể tích cốp": "28 Lít cực rộng",
+      "Loại pin": "Pin LFP 3.5 kWh thế hệ mới",
+      "Công suất cực đại": "3.200 W",
+      "Chuẩn chống nước": "IP67"
+    }
+  },
+  {
+    "id": "feliz-s",
+    "slug": "vinfast-feliz-s",
+    "name": "VinFast Feliz S",
+    "category": "xe-may-trung-cap",
+    "category_name": "Xe Máy Điện Trung Cấp",
+    "tagline": "Xe máy điện thể thao thời thượng - Cốp siêu rộng 25L chứa trọn mũ bảo hiểm và đồ dùng cá nhân",
+    "price_text": "26.000.000 VNĐ",
+    "price_number": 26000000,
+    "badge": "Cốp Rộng 25L",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw1caba829/images/mega-menu/scooter/Feliz.png",
+    "thumbnail_local": "assets/images/cars/vinfast-feliz-s-color-4.png",
+    "colors": [
+      {
+        "name": "Bạc Ánh Kim",
+        "code": "#BDC3C7",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw1caba829/images/mega-menu/scooter/Feliz.png",
+        "img_local": "assets/images/cars/vinfast-feliz-s-color-4.png"
+      },
+      {
+        "name": "Trắng Ngọc Trai",
+        "code": "#FDFEFE",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw1caba829/images/mega-menu/scooter/Feliz.png",
+        "img_local": "assets/images/cars/vinfast-feliz-s-color-4.png"
+      },
+      {
+        "name": "Đen Bóng",
+        "code": "#1B2631",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw1caba829/images/mega-menu/scooter/Feliz.png",
+        "img_local": "assets/images/cars/vinfast-feliz-s-color-4.png"
+      },
+      {
+        "name": "Xanh Rêu",
+        "code": "#196F3D",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw1caba829/images/mega-menu/scooter/Feliz.png",
+        "img_local": "assets/images/cars/vinfast-feliz-s-color-4.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "198 km / lần sạc",
+      "Vận tốc tối đa": "78 km/h",
+      "Thể tích cốp": "25 Lít (chứa 2 mũ bảo hiểm)",
+      "Loại pin": "Pin LFP 3.5 kWh",
+      "Công suất danh định": "1.800 W (Tối đa 3.000 W)",
+      "Chuẩn chống nước": "IP67 ngập 0.5m trong 30 phút"
+    }
+  },
+  {
+    "id": "evo-grand-limited",
+    "slug": "vinfast-evo-grand-limited",
+    "name": "VinFast Evo Grand Limited",
+    "category": "xe-may-trung-cap",
+    "category_name": "Xe Máy Điện Trung Cấp",
+    "tagline": "Phiên bản giới hạn đặc biệt sang trọng - Màu sắc độc quyền hoàng gia, chi tiết mạ chrome",
+    "price_text": "29.900.000 VNĐ",
+    "price_number": 29900000,
+    "badge": "Limited Edition",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwe751f0c5/images/mega-menu/scooter/Evo-Grand-Limited.png",
+    "thumbnail_local": "assets/images/cars/vinfast-evo-grand-limited-color-2.png",
+    "colors": [
+      {
+        "name": "Xanh Cẩm Thạch",
+        "code": "#117A65",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwe751f0c5/images/mega-menu/scooter/Evo-Grand-Limited.png",
+        "img_local": "assets/images/cars/vinfast-evo-grand-limited-color-2.png"
+      },
+      {
+        "name": "Trắng Sữa Sang Trọng",
+        "code": "#F9EBEA",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwe751f0c5/images/mega-menu/scooter/Evo-Grand-Limited.png",
+        "img_local": "assets/images/cars/vinfast-evo-grand-limited-color-2.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "205 km / lần sạc",
+      "Vận tốc tối đa": "70 km/h",
+      "Kích thước D x R x C": "1.856 x 675 x 1.133 mm",
+      "Chiều cao yên": "770 mm",
+      "Khoảng sáng gầm": "133 mm",
+      "Chuẩn chống nước": "IP67"
+    }
+  },
+  {
+    "id": "klara-s-2024",
+    "slug": "vinfast-klara-s",
+    "name": "VinFast Klara S (2024)",
+    "category": "xe-may-trung-cap",
+    "category_name": "Xe Máy Điện Trung Cấp",
+    "tagline": "Thanh lịch chuẩn phong cách Ý - Đường cong kiêu kỳ, tôn vinh khí chất quý cô hiện đại",
+    "price_text": "35.000.000 VNĐ",
+    "price_number": 35000000,
+    "badge": "Phong Cách Ý",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0c43a3de/images/mega-menu/scooter/Feliz-2027.png",
+    "thumbnail_local": "assets/images/cars/vinfast-klara-s-color-3.png",
+    "colors": [
+      {
+        "name": "Trắng Ngọc Trai",
+        "code": "#FBFCFC",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0c43a3de/images/mega-menu/scooter/Feliz-2027.png",
+        "img_local": "assets/images/cars/vinfast-klara-s-color-3.png"
+      },
+      {
+        "name": "Xanh Đậm Quý Tộc",
+        "code": "#1A5276",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0c43a3de/images/mega-menu/scooter/Feliz-2027.png",
+        "img_local": "assets/images/cars/vinfast-klara-s-color-3.png"
+      },
+      {
+        "name": "Đen Nhám",
+        "code": "#2C3E50",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0c43a3de/images/mega-menu/scooter/Feliz-2027.png",
+        "img_local": "assets/images/cars/vinfast-klara-s-color-3.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "194 km / lần sạc",
+      "Vận tốc tối đa": "78 km/h",
+      "Động cơ": "Inhub 1.800 W (Cực đại 3.000 W)",
+      "Hệ thống phanh": "Phanh đĩa trước & sau cao cấp Nissin",
+      "Kích thước D x R x C": "1.890 x 685 x 1.130 mm",
+      "Chuẩn chống nước": "IP67"
+    }
+  },
+  {
+    "id": "evo200",
+    "slug": "vinfast-evo200",
+    "name": "VinFast Evo200",
+    "category": "xe-may-pho-thong",
+    "category_name": "Xe Máy Điện Phổ Thông & Học Sinh",
+    "tagline": "Xe máy điện quốc dân - Di chuyển bứt phá 203 km chỉ sau 1 lần sạc, tiết kiệm chi phí số 1",
+    "price_text": "18.800.000 VNĐ",
+    "price_number": 18800000,
+    "badge": "Quốc Dân Bán Chạy",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw852bfc9b/images/mega-menu/scooter/Evo.png",
+    "thumbnail_local": "assets/images/cars/vinfast-evo200-color-4.png",
+    "colors": [
+      {
+        "name": "Vàng Năng Động",
+        "code": "#F1C40F",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw852bfc9b/images/mega-menu/scooter/Evo.png",
+        "img_local": "assets/images/cars/vinfast-evo200-color-4.png"
+      },
+      {
+        "name": "Đỏ Tươi",
+        "code": "#E74C3C",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw852bfc9b/images/mega-menu/scooter/Evo.png",
+        "img_local": "assets/images/cars/vinfast-evo200-color-4.png"
+      },
+      {
+        "name": "Trắng Ngọc Trai",
+        "code": "#F8F9F9",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw852bfc9b/images/mega-menu/scooter/Evo.png",
+        "img_local": "assets/images/cars/vinfast-evo200-color-4.png"
+      },
+      {
+        "name": "Đen Nhám",
+        "code": "#212F3D",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw852bfc9b/images/mega-menu/scooter/Evo.png",
+        "img_local": "assets/images/cars/vinfast-evo200-color-4.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "203 km (tại vận tốc 30 km/h)",
+      "Vận tốc tối đa": "70 km/h",
+      "Loại pin": "Pin LFP công nghệ cao 3.5 kWh",
+      "Thời gian sạc tiêu chuẩn": "Khoảng 10 tiếng (Sạc 400W)",
+      "Công suất danh định": "1.500 W (Tối đa 2.450 W)",
+      "Chuẩn chống nước": "IP67 (chịu ngập nước 0.5m trong 30 phút)",
+      "Thể tích cốp": "22 Lít rộng rãi"
+    }
+  },
+  {
+    "id": "evo200-lite",
+    "slug": "vinfast-evo200-lite",
+    "name": "VinFast Evo200 Lite",
+    "category": "xe-may-pho-thong",
+    "category_name": "Xe Máy Điện Phổ Thông & Học Sinh",
+    "tagline": "Xe máy điện học sinh hoàn hảo - Không cần bằng lái, vận tốc an toàn 49 km/h, đi xa 205 km",
+    "price_text": "14.300.000 VNĐ",
+    "price_number": 14300000,
+    "badge": "Không Cần Bằng Lái",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw89aa9ba7/images/mega-menu/scooter/EvoLite.png",
+    "thumbnail_local": "assets/images/cars/vinfast-evo200-lite-color-3.png",
+    "colors": [
+      {
+        "name": "Đỏ Thể Thao",
+        "code": "#C0392B",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw89aa9ba7/images/mega-menu/scooter/EvoLite.png",
+        "img_local": "assets/images/cars/vinfast-evo200-lite-color-3.png"
+      },
+      {
+        "name": "Xanh Tím Than",
+        "code": "#1B4F72",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw89aa9ba7/images/mega-menu/scooter/EvoLite.png",
+        "img_local": "assets/images/cars/vinfast-evo200-lite-color-3.png"
+      },
+      {
+        "name": "Trắng Ngọc Trai",
+        "code": "#FFFFFF",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw89aa9ba7/images/mega-menu/scooter/EvoLite.png",
+        "img_local": "assets/images/cars/vinfast-evo200-lite-color-3.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "205 km / lần sạc",
+      "Vận tốc tối đa": "49 km/h (Chuẩn học sinh cấp 3 & sinh viên)",
+      "Loại pin": "Pin LFP 3.5 kWh thế hệ mới",
+      "Công suất danh định": "1.200 W (Cực đại 2.450 W)",
+      "Chuẩn chống nước": "IP67 an toàn tuyệt đối khi mưa bão ngập đường",
+      "Thể tích cốp": "22 Lít"
+    }
+  },
+  {
+    "id": "amio-s2",
+    "slug": "vinfast-amio-s2",
+    "name": "VinFast Amio S2",
+    "category": "xe-may-pho-thong",
+    "category_name": "Xe Máy Điện Phổ Thông & Học Sinh",
+    "tagline": "Xe máy điện đô thị nhỏ gọn, năng động, giá cực kỳ tiết kiệm cho học sinh sinh viên",
+    "price_text": "11.600.000 VNĐ",
+    "price_number": 11600000,
+    "badge": "Giá Siêu Tiết Kiệm",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3c53a8c3/images/mega-menu/scooter/Amio-S2.png",
+    "thumbnail_local": "assets/images/cars/vinfast-amio-s2-color-3.png",
+    "colors": [
+      {
+        "name": "Xám Xi Măng",
+        "code": "#95A5A6",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3c53a8c3/images/mega-menu/scooter/Amio-S2.png",
+        "img_local": "assets/images/cars/vinfast-amio-s2-color-3.png"
+      },
+      {
+        "name": "Đỏ Tươi",
+        "code": "#E74C3C",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3c53a8c3/images/mega-menu/scooter/Amio-S2.png",
+        "img_local": "assets/images/cars/vinfast-amio-s2-color-3.png"
+      },
+      {
+        "name": "Đen Bóng",
+        "code": "#17202A",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3c53a8c3/images/mega-menu/scooter/Amio-S2.png",
+        "img_local": "assets/images/cars/vinfast-amio-s2-color-3.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "Khoảng 70 km",
+      "Vận tốc tối đa": "45 km/h",
+      "Kích thước D x R x C": "1.715 x 690 x 1.050 mm",
+      "Chiều cao yên": "750 mm (Rất vừa vặn người Việt)",
+      "Chuẩn chống nước": "IP67 an tâm mùa mưa ngập"
+    }
+  },
+  {
+    "id": "flazz",
+    "slug": "vinfast-flazz",
+    "name": "VinFast Flazz",
+    "category": "xe-may-pho-thong",
+    "category_name": "Xe Máy Điện Phổ Thông & Học Sinh",
+    "tagline": "Trẻ trung, gọn gàng, khởi động ngày mới tràn đầy năng lượng - Không cần bằng lái",
+    "price_text": "12.900.000 VNĐ",
+    "price_number": 12900000,
+    "badge": "Gọn Nhẹ Đô Thị",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3c53a8c3/images/mega-menu/scooter/Amio-S2.png",
+    "thumbnail_local": "assets/images/cars/vinfast-flazz-thumb.png",
+    "colors": [
+      {
+        "name": "Xanh Pastel",
+        "code": "#5DADE2",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3c53a8c3/images/mega-menu/scooter/Amio-S2.png",
+        "img_local": "assets/images/cars/vinfast-flazz-thumb.png"
+      },
+      {
+        "name": "Trắng Tinh Khôi",
+        "code": "#FFFFFF",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3c53a8c3/images/mega-menu/scooter/Amio-S2.png",
+        "img_local": "assets/images/cars/vinfast-flazz-thumb.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "Khoảng 85 km",
+      "Vận tốc tối đa": "45 km/h",
+      "Công suất động cơ": "1.000 W",
+      "Trọng lượng cả pin": "Chỉ 78 kg",
+      "Chuẩn chống nước": "IP67"
+    }
+  },
+  {
+    "id": "zgoo",
+    "slug": "vinfast-zgoo",
+    "name": "VinFast ZGoo",
+    "category": "xe-may-pho-thong",
+    "category_name": "Xe Máy Điện Phổ Thông & Học Sinh",
+    "tagline": "Dòng xe máy điện Gen Z cá tính, di chuyển linh hoạt trong từng ngõ hẻm",
+    "price_text": "13.500.000 VNĐ",
+    "price_number": 13500000,
+    "badge": "Gen Z Cá Tính",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw89aa9ba7/images/mega-menu/scooter/EvoLite.png",
+    "thumbnail_local": "assets/images/cars/vinfast-zgoo-thumb.png",
+    "colors": [
+      {
+        "name": "Cam Neon",
+        "code": "#FF5722",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw89aa9ba7/images/mega-menu/scooter/EvoLite.png",
+        "img_local": "assets/images/cars/vinfast-zgoo-thumb.png"
+      },
+      {
+        "name": "Đen Mờ",
+        "code": "#212121",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw89aa9ba7/images/mega-menu/scooter/EvoLite.png",
+        "img_local": "assets/images/cars/vinfast-zgoo-thumb.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường 1 lần sạc": "Khoảng 90 km",
+      "Vận tốc tối đa": "48 km/h",
+      "Khung xe": "Thép chịu lực gia cường cao cấp",
+      "Khoảng sáng gầm": "135 mm",
+      "Chuẩn chống nước": "IP67"
+    }
+  },
+  {
+    "id": "drgnfly",
+    "slug": "vinfast-vf-drgnfly",
+    "name": "VinFast VF DrgnFly",
+    "category": "xe-may-pho-thong",
+    "category_name": "Xe Đạp Điện Trợ Lực",
+    "tagline": "Xe đạp điện trợ lực địa hình cá tính - Chinh phục mọi cung đường đô thị và dã ngoại",
+    "price_text": "18.690.000 VNĐ",
+    "price_number": 18690000,
+    "badge": "E-Bike Địa Hình",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd68b325a/images/mega-menu/scooter/Drgnfly.png",
+    "thumbnail_local": "assets/images/cars/vinfast-vf-drgnfly-color-2.png",
+    "colors": [
+      {
+        "name": "Vàng Cát Sa Mạc",
+        "code": "#D4AC0D",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd68b325a/images/mega-menu/scooter/Drgnfly.png",
+        "img_local": "assets/images/cars/vinfast-vf-drgnfly-color-2.png"
+      },
+      {
+        "name": "Đen Thể Thao",
+        "code": "#1C2833",
+        "img": "https://vinfasttaysaigon.vn/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd68b325a/images/mega-menu/scooter/Drgnfly.png",
+        "img_local": "assets/images/cars/vinfast-vf-drgnfly-color-2.png"
+      }
+    ],
+    "specs": {
+      "Quãng đường trợ lực": "Lên tới 110 km",
+      "Vận tốc tối đa": "45 km/h",
+      "Khung sườn": "Hợp kim nhôm siêu nhẹ và chịu lực cao",
+      "Bánh xe": "Lốp béo địa hình bám đường vượt trội",
+      "Kết nối": "Ứng dụng điện thoại thông minh"
+    }
+  },
+  {
+    "id": "goi-thue-pin",
+    "slug": "goi-thue-pin-xe-may-dien",
+    "name": "Gói Thuê Pin Xe Máy Điện VinFast",
+    "category": "pin-va-tram-sac",
+    "category_name": "Hệ Sinh Thái Pin & Trạm Sạc",
+    "tagline": "Tiết kiệm chi phí đầu tư ban đầu - Đổi pin miễn phí trọn đời khi dung lượng chai dưới 70%",
+    "price_text": "Từ 250.000 VNĐ/tháng",
+    "price_number": 250000,
+    "badge": "Linh Hoạt Tiết Kiệm",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/static-cms-prod.vinfastauto.com/wheel_0.webp",
+    "thumbnail_local": "assets/images/cars/goi-thue-pin-vinfast-thumb.webp",
+    "colors": [],
+    "specs": {
+      "Chính sách bảo trì": "Thay pin mới 100% miễn phí khi dung lượng chai dưới 70%",
+      "Chi phí sử dụng": "Rẻ hơn gấp 5 lần so với đổ xăng cùng quãng đường",
+      "Độ an toàn": "VinFast chịu hoàn toàn rủi ro về chất lượng và tuổi thọ pin",
+      "Gói cước": "Linh hoạt theo số km thực tế di chuyển hàng tháng"
+    }
+  },
+  {
+    "id": "pin-lfp-mua-dut",
+    "slug": "pin-lfp-chinh-hang",
+    "name": "Pin LFP Chính Hãng Xe Máy Điện (Mua Đứt)",
+    "category": "pin-va-tram-sac",
+    "category_name": "Hệ Sinh Thái Pin & Trạm Sạc",
+    "tagline": "Sở hữu trọn đời công nghệ pin LFP siêu an toàn - Chống cháy nổ, bảo hành 5 năm",
+    "price_text": "Từ 15.000.000 VNĐ / pack",
+    "price_number": 15000000,
+    "badge": "Chuẩn Chống Nước IP67",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/static-cms-prod.vinfastauto.com/icon-drive.webp",
+    "thumbnail_local": "assets/images/cars/pin-lfp-chinh-hang-thumb.webp",
+    "colors": [],
+    "specs": {
+      "Công nghệ": "Lithium Iron Phosphate (LFP) siêu bền bỉ và an toàn tuyệt đối",
+      "Chuẩn chống nước": "IP67 chịu ngâm nước sâu 0.5m trong 30 phút",
+      "Tuổi thọ": "Hơn 2.000 chu kỳ nạp xả vẫn giữ trên 70% dung lượng",
+      "Bảo hành": "Bảo hành chính hãng 5 năm không giới hạn km"
+    }
+  },
+  {
+    "id": "bo-sac-tai-nha",
+    "slug": "bo-sac-xe-may-dien-tai-nha",
+    "name": "Bộ Sạc Xe Máy Điện Tại Nhà",
+    "category": "pin-va-tram-sac",
+    "category_name": "Hệ Sinh Thái Pin & Trạm Sạc",
+    "tagline": "Bộ sạc di động chính hãng 400W & 1.000W sạc nhanh - Cắm điện dân dụng 220V tiện lợi",
+    "price_text": "Từ 1.100.000 VNĐ",
+    "price_number": 1100000,
+    "badge": "Chính Hãng VinFast",
+    "thumbnail": "https://vinfasttaysaigon.vn/_a/static-cms-prod.vinfastauto.com/icon-calculator.webp",
+    "thumbnail_local": "assets/images/cars/bo-sac-tai-nha-vinfast-thumb.webp",
+    "colors": [],
+    "specs": {
+      "Phiên bản 400W": "Sạc tiêu chuẩn qua đêm, bảo vệ tế bào pin tối đa",
+      "Phiên bản 1.000W": "Sạc nhanh siêu tốc, rút ngắn 60% thời gian sạc",
+      "Nguồn điện": "Cắm trực tiếp ổ cắm 220V gia đình",
+      "Tính năng an toàn": "Tự ngắt khi pin đầy, chống quá áp, chống đoản mạch"
+    }
+  }
+]

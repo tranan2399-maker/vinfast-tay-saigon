@@ -1,0 +1,147 @@
+[
+  {
+    "fullName": "Nguyễn Hoàng Minh",
+    "phone": "0909123456",
+    "email": "hoangminh@gmail.com",
+    "model": "VinFast Feliz 2027",
+    "showroom": "VinFast Tây Sài Gòn (Trụ sở chính) - 982 Tỉnh Lộ 10",
+    "planTime": "Sẵn sàng nhận xe ngay trong tháng",
+    "submitted_at": "2026-11-05 12:30:45"
+  },
+  {
+    "fullName": "Trần Thị Mai Anh",
+    "phone": "0988777666",
+    "email": "maianh.tran@qa-vinfast.vn",
+    "model": "VinFast Theon S",
+    "showroom": "VinFast Tây Sài Gòn (Trụ sở chính)",
+    "planTime": "Sẵn sàng nhận xe ngay trong tuần này",
+    "submitted_at": "2026-11-05 13:08:03"
+  },
+  {
+    "fullName": "Nguyễn Văn Test QA",
+    "phone": "0901234567",
+    "email": "testqa@vinfast.vn",
+    "model": "Feliz 2027",
+    "showroom": "Showroom 1 - Bình Tân (982 Tỉnh Lộ 10)",
+    "note": "Audit QA lead submission test",
+    "submitted_at": "2026-11-05 13:19:52"
+  },
+  {
+    "fullName": "Trần Văn QA Final Check",
+    "phone": "0933792866",
+    "email": "qacheck@vinfasttaysaigon.vn",
+    "model": "VinFast Evo Grand Limited",
+    "showroom": "Showroom 1 - Bình Tân (982 Tỉnh Lộ 10)",
+    "planTime": "Nhận xe ngay trong tuần",
+    "submitted_at": "2026-11-05 13:36:52"
+  },
+  {
+    "fullName": "Đặng Lái Thử Test Drive Subpage",
+    "phone": "0933792866",
+    "email": "laithu@vinfasttaysaigon.vn",
+    "model": "VinFast Feliz 2027",
+    "showroom": "Đăng ký mang xe lái thử tận nhà miễn phí",
+    "planTime": "Sẵn sàng nhận xe ngay trong tháng",
+    "requestType": "Đăng ký lái thử tận nhà & Showroom",
+    "submitted_at": "2026-11-05 13:51:57"
+  },
+  {
+    "fullName": "Lê Hoàng Đặt Cọc Online",
+    "phone": "0933792866",
+    "email": "lehoang.datcoc@vinfasttaysaigon.vn",
+    "model": "VinFast Theon S (63.000.000 VNĐ)",
+    "showroom": "VinFast Tây Sài Gòn (Trụ sở chính) - 982 Tỉnh Lộ 10, Tân Tạo",
+    "color": "Đen Nhám Quyền Lực",
+    "depositAmount": "1.000.000 VNĐ",
+    "requestType": "Đặt cọc giữ xe trực tuyến",
+    "submitted_at": "2026-11-05 15:48:35"
+  },
+  {
+    "fullName": "Tester Phu Kien",
+    "phone": "0933792866",
+    "email": "test@vinfasttaysaigon.vn",
+    "model": "Phu Kien & Hau Mai Test",
+    "city": "TP.HCM",
+    "submitted_at": "2026-11-05 16:15:23"
+  },
+  {
+    "fullName": "Trần Thị Khách Phụ Kiện",
+    "phone": "0933792866",
+    "email": "phukien.test@vinfasttaysaigon.vn",
+    "model": "Bộ Sạc Nhanh Siêu Tốc 1.000W VinFast (2.850.000 VNĐ)",
+    "showroom": "📦 Giao hàng tận nơi miễn phí tại TP.HCM",
+    "requestType": "Đặt mua phụ kiện xe máy điện chính hãng",
+    "submitted_at": "2026-11-05 16:22:46"
+  },
+  {
+    "fullName": "Bùi Văn Bảo Dưỡng",
+    "phone": "0933792866",
+    "email": "baoduong@vinfasttaysaigon.vn",
+    "model": "VinFast Feliz 2027 / Feliz S",
+    "showroom": "VinFast Tây Sài Gòn (Trụ sở chính) - 982 Tỉnh Lộ 10, Tân Tạo",
+    "planTime": "Mốc 5.000 km (Tiền công 60.000đ)",
+    "requestType": "Đặt lịch bảo dưỡng định kỳ xe máy điện",
+    "submitted_at": "2026-11-05 16:24:15"
+  },
+  {
+    "fullName": "Võ Cứu Hộ Khẩn Cấp",
+    "phone": "0933792866",
+    "email": "cuuho@vinfasttaysaigon.vn",
+    "model": "VinFast Evo200",
+    "note": "Hết pin tại vòng xoay Phú Lâm, Quận 6",
+    "requestType": "Yêu cầu cứu hộ khẩn cấp & pin 24/7",
+    "submitted_at": "2026-11-05 16:24:15"
+  },
+  {
+    "fullName": "Lâm Mobile Service",
+    "phone": "0933792866",
+    "email": "mobileservice@vinfasttaysaigon.vn",
+    "model": "VinFast Theon S",
+    "note": "456 Tên Lửa, Bình Trị Đông B, Bình Tân",
+    "requestType": "Đặt lịch Mobile Service sửa chữa lưu động tận nhà",
+    "submitted_at": "2026-11-05 16:24:15"
+  },
+  {
+    "fullName": "Đỗ Phụ Tùng Chính Hãng",
+    "phone": "0933792866",
+    "email": "phutung@vinfasttaysaigon.vn",
+    "model": "VinFast Vero X",
+    "showroom": "📦 Giao phụ tùng tận nhà miễn phí (Toàn quốc)",
+    "planTime": "Má phanh & Đĩa phanh chính hãng",
+    "requestType": "Tra cứu & Đặt mua phụ tùng xe máy điện chính hãng",
+    "submitted_at": "2026-11-05 16:24:15"
+  },
+  {
+    "name": "Audit Test User",
+    "phone": "0933792866",
+    "email": "audit@vinfasttaysaigon.vn",
+    "model": "Feliz S",
+    "showroom": "982 Tỉnh Lộ 10, Bình Tân",
+    "note": "Automated UX/UI verification test",
+    "submitted_at": "2026-11-08 12:22:44"
+  },
+  {
+    "fullName": "Khách Hàng Bảo Hành",
+    "phone": "0901111222",
+    "model": "VinFast Feliz 2027",
+    "showroom": "Trụ sở chính: 982 Tỉnh Lộ 10",
+    "requestType": "Chính Sách Bảo Hành",
+    "submitted_at": "2026-11-08 17:50:03"
+  },
+  {
+    "fullName": "Khách Hàng Bảo Dưỡng",
+    "phone": "0902222333",
+    "model": "VinFast Evo200",
+    "showroom": "Showroom 4: 102 Trường Chinh",
+    "requestType": "Dịch Vụ Bảo Dưỡng",
+    "submitted_at": "2026-11-08 17:50:03"
+  },
+  {
+    "fullName": "Khách Hàng Sửa Chữa",
+    "phone": "0903333444",
+    "model": "VinFast Theon S",
+    "showroom": "Showroom 6: 688 Quang Trung",
+    "requestType": "Dịch Vụ Sửa Chữa",
+    "submitted_at": "2026-11-08 17:50:03"
+  }
+]
