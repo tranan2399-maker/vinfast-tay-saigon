@@ -3848,3 +3848,410 @@ html body .menu_scooter .mega_menu.show {
     top: 60px !important;
   }
 }
+
+
+/* ==========================================================================
+   VINFAST OFFICIAL MOBILE RESPONSIVE OPTIMIZATION SYSTEM (<= 991px & <= 768px)
+   100% Comprehensive UX/UI, Zero Horizontal Overflow, Touch Ergonomics & Sticky CTA
+   ========================================================================== */
+
+/* 1. ZERO HORIZONTAL OVERFLOW & TOUCH SCROLLING */
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  /* Prevent horizontal stretch on all standard grid containers */
+  .container,
+  .container-fluid {
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .row {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Sliders and scrollers must never blow out screen width */
+  .slick-slider,
+  .slick-list,
+  .slick-track,
+  .swiper,
+  .swiper-container,
+  .swiper-wrapper {
+    max-width: 100% !important;
+  }
+
+  /* Images and SVGs responsive boundaries */
+  img, picture, svg {
+    max-width: 100% !important;
+    height: auto;
+  }
+
+  /* 2. MOBILE HEADER & NAVIGATION OFFSET */
+  header,
+  .v3s-header,
+  .v3s-header--bottom {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 60px !important;
+    background: #ffffff !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+    z-index: 9999 !important;
+  }
+
+  .v3s-header-mobile--left .logo img {
+    height: 42px !important;
+    width: auto !important;
+    max-height: 42px !important;
+    object-fit: contain !important;
+  }
+
+  /* Universal page top offset to prevent header from overlapping H1/hero */
+  body {
+    padding-top: 60px !important;
+  }
+
+  main,
+  .page,
+  .v3s-main,
+  .v3s-home-hero,
+  .hero-banner,
+  .dvhm-revamp-page {
+    margin-top: 0 !important;
+  }
+
+  /* Hamburger touch target minimum 44x44px */
+  .block-megamainmenu.desktop-hover,
+  .navbar-toggler,
+  .custom-group-user-mobile .block-megamainmenu,
+  .mega-submenu .block-megamainmenu {
+    min-width: 44px !important;
+    min-height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+  }
+
+  /* 3. MOBILE DRAWER MENU (#megaMenuModal / #mega-submenu) */
+  #megaMenuModal {
+    z-index: 9999999 !important;
+  }
+
+  #megaMenuModal .modal-dialog {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+  }
+
+  #megaMenuModal .modal-content {
+    min-height: 100vh !important;
+    height: 100% !important;
+    border-radius: 0 !important;
+    border: none !important;
+    background: #ffffff !important;
+  }
+
+  #megaMenuModal #mega-submenu.modal-body {
+    padding: 20px 16px 100px !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  #mega-submenu .display-mobile ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #mega-submenu .display-mobile > ul > li {
+    border-bottom: 1px solid #f1f5f9 !important;
+    padding: 0 !important;
+  }
+
+  #mega-submenu .display-mobile > ul > li > a,
+  #mega-submenu .display-mobile .toggle-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    min-height: 52px !important;
+    padding: 14px 8px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #111827 !important;
+    text-decoration: none !important;
+    touch-action: manipulation !important;
+  }
+
+  #mega-submenu .toggle-header-arrow {
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3E%3Cpath stroke='%231464f4' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m4 6 4 4 4-4'/%3E%3C/svg%3E") center no-repeat !important;
+    transition: transform 0.25s ease !important;
+  }
+
+  .submenu-expand.active-expand .toggle-header-arrow,
+  .submenu-expand.open .toggle-header-arrow,
+  .service-mobile-expand.active-expand .toggle-header-arrow,
+  .service-mobile-expand.open .toggle-header-arrow {
+    transform: rotate(180deg) !important;
+  }
+
+  /* Submenu lists inside Drawer */
+  #mega-submenu .submenu-expand > ul,
+  #mega-submenu .service-mobile-expand > ul {
+    display: none;
+    padding: 8px 0 16px 12px !important;
+    background: #f8fafc !important;
+    border-radius: 8px !important;
+    margin: 4px 0 12px !important;
+  }
+
+  #mega-submenu .submenu-expand.active-expand > ul,
+  #mega-submenu .submenu-expand.open > ul,
+  #mega-submenu .service-mobile-expand.active-expand > ul,
+  #mega-submenu .service-mobile-expand.open > ul {
+    display: block !important;
+  }
+
+  #mega-submenu .submenu-expand > ul > li > a,
+  #mega-submenu .service-mobile-expand > ul > li > a {
+    display: flex !important;
+    align-items: center !important;
+    min-height: 44px !important;
+    padding: 10px 14px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #334155 !important;
+    text-decoration: none !important;
+  }
+
+  #mega-submenu .submenu-expand > ul > li > a:hover,
+  #mega-submenu .service-mobile-expand > ul > li > a:hover {
+    color: #1464f4 !important;
+  }
+
+  .submenu-subheader {
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    color: #1464f4 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    padding: 12px 14px 4px !important;
+    list-style: none !important;
+  }
+}
+
+/* 4. PRODUCT DETAIL PAGE (PDP), COLOR SWATCHES & SPEC TABLES */
+@media (max-width: 991px) {
+  /* Specification tables & data tables wrapper */
+  .table-responsive,
+  .dvhm-responsive-table-wrap,
+  .v3s-table-scroll {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    margin-bottom: 20px !important;
+    border-radius: 8px !important;
+  }
+
+  .table-responsive table,
+  .dvhm-responsive-table-wrap table,
+  .v3s-table-scroll table {
+    min-width: 480px !important;
+    border-collapse: collapse !important;
+  }
+
+  /* Color swatch buttons: touch-friendly 36x36px with clear active indicator */
+  .ebike-pdp-v2-color-variant__swatch,
+  .vf-swatch-dot,
+  .egp-colors__item,
+  .color-swatch-item,
+  .swatch-color {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    min-height: 36px !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    margin: 4px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  .ebike-pdp-v2-color-variant__swatch.active,
+  .ebike-pdp-v2-color-variant__swatch.selected,
+  .vf-swatch-dot.active,
+  .egp-colors__item.active,
+  .color-swatch-item.active {
+    box-shadow: 0 0 0 2.5px #ffffff, 0 0 0 4.5px #1464f4 !important;
+    transform: scale(1.1) !important;
+  }
+
+  /* Prominent Price Display */
+  .ebike-pdp-v2-product-summary__price-text,
+  .ebike-pdp-v2-product-summary__price,
+  .price-buy,
+  .vf-card-price-value,
+  .bestSale-price {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    color: #1464f4 !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* 5. FORM USABILITY & ACCESSIBILITY ON SMARTPHONES */
+@media (max-width: 991px) {
+  /* Prevent iOS Safari auto-zoom on input focus by setting 16px font-size */
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  textarea,
+  .form-control,
+  .form-select {
+    font-size: 16px !important;
+    min-height: 48px !important;
+    border-radius: 6px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Full-width, comfortable submit buttons */
+  form button[type="submit"],
+  form input[type="submit"],
+  .btn-submit,
+  .btn-primary-lead,
+  .v3s-btn-cta,
+  .btn-register-driver {
+    width: 100% !important;
+    min-height: 50px !important;
+    height: 50px !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    letter-spacing: 0.3px !important;
+    touch-action: manipulation !important;
+  }
+}
+
+/* 6. STICKY MOBILE BOTTOM BAR (<= 768px) */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 74px !important;
+  }
+
+  .v3s-mobile-sticky-bar {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 64px !important;
+    background: #ffffff !important;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08) !important;
+    border-top: 1px solid #e2e8f0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    padding: 6px 10px !important;
+    z-index: 99999 !important;
+    gap: 8px !important;
+  }
+
+  .v3s-mobile-sticky-btn {
+    flex: 1 1 0 !important;
+    height: 48px !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-family: Mulish, sans-serif !important;
+    font-size: 13.5px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    padding: 0 8px !important;
+    gap: 6px !important;
+    transition: all 0.2s ease !important;
+    touch-action: manipulation !important;
+  }
+
+  .v3s-mobile-sticky-btn svg {
+    width: 18px !important;
+    height: 18px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .v3s-mobile-sticky-btn--call {
+    background: #16a34a !important;
+    color: #ffffff !important;
+  }
+
+  .v3s-mobile-sticky-btn--call:hover,
+  .v3s-mobile-sticky-btn--call:active {
+    background: #15803d !important;
+    color: #ffffff !important;
+  }
+
+  .v3s-mobile-sticky-btn--zalo {
+    background: #0068ff !important;
+    color: #ffffff !important;
+  }
+
+  .v3s-mobile-sticky-btn--zalo:hover,
+  .v3s-mobile-sticky-btn--zalo:active {
+    background: #0054cc !important;
+    color: #ffffff !important;
+  }
+
+  .v3s-mobile-sticky-btn--booking {
+    background: #1464f4 !important;
+    color: #ffffff !important;
+  }
+
+  .v3s-mobile-sticky-btn--booking:hover,
+  .v3s-mobile-sticky-btn--booking:active {
+    background: #0044bd !important;
+    color: #ffffff !important;
+  }
+
+  /* Elevate floating buttons (Hotline, Zalo, Back-to-top) so they don't cover the bottom bar */
+  .float-menu,
+  .floating-contact,
+  .hotline-floating,
+  .zalo-floating,
+  .c-floating-widget,
+  .back-to-top {
+    bottom: 80px !important;
+  }
+}

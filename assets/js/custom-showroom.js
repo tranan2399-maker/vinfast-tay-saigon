@@ -1274,3 +1274,138 @@ if (document.readyState === 'loading') {
 } else {
   initScooterMenuDropdown();
 }
+
+
+// ==========================================================================
+// VINFAST OFFICIAL MOBILE RESPONSIVE ENHANCEMENTS (SMARTPHONES <= 768px & <= 991px)
+// Sticky Bottom Bar, Responsive Tables, Mobile Drawer Accordion & Color Swatches
+// ==========================================================================
+function initMobileResponsiveEnhancements() {
+  // 1. Sticky Mobile Bottom CTA Bar
+  function setupMobileBottomBar() {
+    if (document.getElementById('v3sMobileBottomBar')) return;
+
+    const bar = document.createElement('div');
+    bar.id = 'v3sMobileBottomBar';
+    bar.className = 'v3s-mobile-sticky-bar d-md-none';
+    bar.innerHTML = `
+      <a href="tel:0933792866" class="v3s-mobile-sticky-btn v3s-mobile-sticky-btn--call" aria-label="Gọi hotline VinFast Tây Sài Gòn">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+        <span>Gọi ngay</span>
+      </a>
+      <a href="https://zalo.me/0933792866" target="_blank" rel="noopener noreferrer" class="v3s-mobile-sticky-btn v3s-mobile-sticky-btn--zalo" aria-label="Chat Zalo VinFast Tây Sài Gòn">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.14 2 11.25c0 2.87 1.44 5.43 3.69 7.07L4.5 22l4.02-1.34C9.72 20.85 10.84 21 12 21c5.52 0 10-4.14 10-9.25S17.52 2 12 2z"/></svg>
+        <span>Chat Zalo</span>
+      </a>
+      <a href="/dang-ky-lai-thu.html" class="v3s-mobile-sticky-btn v3s-mobile-sticky-btn--booking" id="v3sStickyBookingBtn" aria-label="Đặt lịch lái thử xe máy điện">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M13 3L4 14h7v7l9-11h-7V3z"/></svg>
+        <span>Đăng ký lái thử</span>
+      </a>
+    `;
+
+    document.body.appendChild(bar);
+
+    const bookingBtn = document.getElementById('v3sStickyBookingBtn');
+    if (bookingBtn) {
+      bookingBtn.addEventListener('click', function(e) {
+        const leadForm = document.querySelector('#lead-form') || 
+                         document.querySelector('#dang-ky-lai-thu') || 
+                         document.querySelector('form[name="lead"]') ||
+                         document.querySelector('.v3s-lead-form');
+        if (leadForm) {
+          e.preventDefault();
+          leadForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+  }
+
+  // 2. Mobile Drawer Accordion Toggle ("Sản phẩm" & "Dịch vụ hậu mãi")
+  function setupMobileDrawerAccordion() {
+    const expandItems = document.querySelectorAll('#mega-submenu .submenu-expand, .service-mobile-expand');
+    expandItems.forEach(item => {
+      const toggleHeader = item.querySelector('.toggle-header');
+      const subUl = item.querySelector('ul');
+      if (!toggleHeader || !subUl) return;
+
+      toggleHeader.addEventListener('click', function(e) {
+        // If clicking on direct link or "Xem tất cả", allow normal navigation
+        if (e.target.closest('.view-all') || (e.target.tagName === 'A' && !e.target.classList.contains('toggle-header'))) {
+          return;
+        }
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        const isOpen = item.classList.contains('active-expand') || item.classList.contains('open');
+
+        // Close other sibling expands
+        const siblings = item.parentElement.querySelectorAll('.submenu-expand, .service-mobile-expand');
+        siblings.forEach(s => {
+          if (s !== item) {
+            s.classList.remove('active-expand', 'open', 'active');
+            const otherUl = s.querySelector('ul');
+            if (otherUl) otherUl.style.display = 'none';
+          }
+        });
+
+        // Toggle current item
+        item.classList.toggle('active-expand', !isOpen);
+        item.classList.toggle('open', !isOpen);
+        item.classList.toggle('active', !isOpen);
+        subUl.style.display = isOpen ? 'none' : 'block';
+      });
+    });
+  }
+
+  // 3. Auto-wrap Tables in Touch-friendly Horizontal Scrollers
+  function setupResponsiveTables() {
+    const tables = document.querySelectorAll('table');
+    tables.forEach(table => {
+      // Check if already in a responsive wrapper
+      const parent = table.parentElement;
+      if (parent && (parent.classList.contains('table-responsive') || 
+                     parent.classList.contains('dvhm-responsive-table-wrap') || 
+                     parent.classList.contains('v3s-table-scroll'))) {
+        return;
+      }
+      const wrap = document.createElement('div');
+      wrap.className = 'table-responsive v3s-table-scroll';
+      wrap.style.maxWidth = '100%';
+      wrap.style.overflowX = 'auto';
+      wrap.style.webkitOverflowScrolling = 'touch';
+      wrap.style.marginBottom = '20px';
+      wrap.style.borderRadius = '8px';
+      table.parentNode.insertBefore(wrap, table);
+      wrap.appendChild(table);
+    });
+  }
+
+  // 4. Color Swatches Tap Support on PDPs
+  function setupColorSwatches() {
+    const swatches = document.querySelectorAll('.ebike-pdp-v2-color-variant__swatch, .vf-swatch-dot, .egp-colors__item');
+    swatches.forEach(swatch => {
+      swatch.addEventListener('click', function() {
+        const container = this.closest('.ebike-pdp-v2-color-variant__selector, .vf-color-swatches, .egp-colors');
+        if (container) {
+          container.querySelectorAll('.ebike-pdp-v2-color-variant__swatch, .vf-swatch-dot, .egp-colors__item').forEach(s => {
+            s.classList.remove('active', 'selected');
+          });
+        }
+        this.classList.add('active', 'selected');
+      });
+    });
+  }
+
+  // Run on load
+  setupMobileBottomBar();
+  setupMobileDrawerAccordion();
+  setupResponsiveTables();
+  setupColorSwatches();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initMobileResponsiveEnhancements);
+} else {
+  initMobileResponsiveEnhancements();
+}
