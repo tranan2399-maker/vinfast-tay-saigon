@@ -6,3 +6,4 @@
   to = "/:splat.html"
   status = 200
   force = false
+

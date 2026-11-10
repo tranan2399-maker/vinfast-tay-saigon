@@ -3885,14 +3885,19 @@ html, body {
     box-sizing: border-box !important;
   }
 
-  /* Sliders and scrollers must never blow out screen width */
+  /* Sliders and scrollers containers must never blow out screen width */
   .slick-slider,
   .slick-list,
-  .slick-track,
   .swiper,
-  .swiper-container,
-  .swiper-wrapper {
+  .swiper-container {
     max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  /* Internal tracks MUST expand freely to lay out slides horizontally */
+  .slick-track,
+  .swiper-wrapper {
+    max-width: none !important;
   }
 
   /* Images and SVGs responsive boundaries */
@@ -3902,8 +3907,7 @@ html, body {
   }
 
   /* 2. MOBILE HEADER & NAVIGATION OFFSET */
-  header,
-  .v3s-header,
+  /* Only sticky inner bar is fixed */
   .v3s-header--bottom {
     position: fixed !important;
     top: 0 !important;
@@ -3913,6 +3917,15 @@ html, body {
     height: 60px !important;
     background: #ffffff !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+    z-index: 9999 !important;
+  }
+
+  /* Header wrapper maintains normal flow to avoid trapping modals */
+  header.v3s-header,
+  header#header,
+  header {
+    position: relative !important;
+    height: 60px !important;
     z-index: 9999 !important;
   }
 
@@ -3933,7 +3946,8 @@ html, body {
   .v3s-main,
   .v3s-home-hero,
   .hero-banner,
-  .dvhm-revamp-page {
+  .dvhm-revamp-page,
+  .page-escooter {
     margin-top: 0 !important;
   }
 
@@ -3968,12 +3982,50 @@ html, body {
     border-radius: 0 !important;
     border: none !important;
     background: #ffffff !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Mobile Drawer Top Bar with Brand & Close Button */
+  #megaMenuModal .modal-header,
+  #megaMenuModal .v3s-drawer-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 12px 16px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    background: #ffffff !important;
+    min-height: 56px !important;
+    flex-shrink: 0 !important;
+  }
+
+  #megaMenuModal .modal-header .close,
+  #megaMenuModal .v3s-drawer-close-btn {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    background: #f1f5f9 !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    color: #374151 !important;
+    transition: background 0.2s ease !important;
+  }
+
+  #megaMenuModal .modal-header .close svg,
+  #megaMenuModal .v3s-drawer-close-btn svg {
+    width: 20px !important;
+    height: 20px !important;
   }
 
   #megaMenuModal #mega-submenu.modal-body {
-    padding: 20px 16px 100px !important;
+    padding: 16px 16px 120px !important;
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch !important;
+    flex: 1 1 auto !important;
   }
 
   #mega-submenu .display-mobile ul {

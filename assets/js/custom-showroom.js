@@ -1320,24 +1320,79 @@ function initMobileResponsiveEnhancements() {
     }
   }
 
-  // 2. Mobile Drawer Accordion Toggle ("Sản phẩm" & "Dịch vụ hậu mãi")
+  // 2. Mobile Drawer Accordion Toggle ("Sản phẩm" & "Dịch vụ hậu mãi") & Close Handling
   function setupMobileDrawerAccordion() {
-    const expandItems = document.querySelectorAll('#mega-submenu .submenu-expand, .service-mobile-expand');
+    const modal = document.getElementById('megaMenuModal');
+    if (modal) {
+      // Ensure mobile header with Close Button is visible
+      let modalHeader = modal.querySelector('.modal-header');
+      if (modalHeader) {
+        modalHeader.classList.remove('d-none', 'd-lg-block');
+      }
+
+      let closeBtn = modal.querySelector('.close, .v3s-drawer-close-btn');
+      if (!closeBtn && modalHeader) {
+        closeBtn = document.createElement('button');
+        closeBtn.type = 'button';
+        closeBtn.className = 'close v3s-drawer-close-btn';
+        closeBtn.setAttribute('aria-label', 'Close');
+        closeBtn.innerHTML = `
+          <svg fill="none" height="20" width="20" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        `;
+        modalHeader.appendChild(closeBtn);
+      }
+
+      // Close modal on click of close button
+      if (closeBtn) {
+        closeBtn.onclick = function(e) {
+          e.preventDefault();
+          if (window.jQuery && window.jQuery(modal).modal) {
+            window.jQuery(modal).modal('hide');
+          } else {
+            modal.classList.remove('show');
+            modal.style.display = 'none';
+            document.body.classList.remove('modal-open');
+            const backdrop = document.querySelector('.modal-backdrop');
+            if (backdrop) backdrop.remove();
+          }
+          document.body.style.overflowY = 'auto';
+        };
+      }
+
+      // Automatically close modal when clicking on any navigational link inside
+      const drawerLinks = modal.querySelectorAll('a[href]:not([href^="javascript"]):not(.view-all):not(.toggle-header)');
+      drawerLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          if (window.jQuery && window.jQuery(modal).modal) {
+            window.jQuery(modal).modal('hide');
+          }
+        });
+      });
+    }
+
+    const expandItems = document.querySelectorAll('#mega-submenu .submenu-expand, #mega-submenu .service-mobile-expand');
     expandItems.forEach(item => {
+      if (item.dataset.v3sAccordionBound) return;
+      item.dataset.v3sAccordionBound = 'true';
+
       const toggleHeader = item.querySelector('.toggle-header');
       const subUl = item.querySelector('ul');
       if (!toggleHeader || !subUl) return;
 
+      // Use Capture Phase to intercept and control accordion behavior completely
       toggleHeader.addEventListener('click', function(e) {
-        // If clicking on direct link or "Xem tất cả", allow normal navigation
-        if (e.target.closest('.view-all') || (e.target.tagName === 'A' && !e.target.classList.contains('toggle-header'))) {
+        // If clicking on "Xem tất cả" (.view-all), allow natural browser navigation
+        if (e.target.closest('.view-all')) {
           return;
         }
 
-        e.preventDefault();
+        e.stopImmediatePropagation();
         e.stopPropagation();
+        e.preventDefault();
 
-        const isOpen = item.classList.contains('active-expand') || item.classList.contains('open');
+        const isCurrentlyOpen = item.classList.contains('active-expand') || item.classList.contains('open');
 
         // Close other sibling expands
         const siblings = item.parentElement.querySelectorAll('.submenu-expand, .service-mobile-expand');
@@ -1350,11 +1405,14 @@ function initMobileResponsiveEnhancements() {
         });
 
         // Toggle current item
-        item.classList.toggle('active-expand', !isOpen);
-        item.classList.toggle('open', !isOpen);
-        item.classList.toggle('active', !isOpen);
-        subUl.style.display = isOpen ? 'none' : 'block';
-      });
+        if (!isCurrentlyOpen) {
+          item.classList.add('active-expand', 'open', 'active');
+          subUl.style.display = 'block';
+        } else {
+          item.classList.remove('active-expand', 'open', 'active');
+          subUl.style.display = 'none';
+        }
+      }, true);
     });
   }
 
