@@ -1061,3 +1061,216 @@ if (document.readyState === 'loading') {
 } else {
   initDvhmRevampFeatures();
 }
+
+
+// ==========================================================================
+// VINFAST OFFICIAL XE MÁY ĐIỆN MEGA MENU ("SẢN PHẨM" - .menu_scooter)
+// Smooth hover, anti-drop debounce, direct link navigation, tab switching & lazy loading
+// ==========================================================================
+function initScooterMenuDropdown() {
+  const scooterLi = document.querySelector('.mega_menu_header.mega-main-menu > li.menu_scooter, li.mega_main.menu_scooter, .menu_scooter');
+  if (!scooterLi) return;
+
+  const triggerLink = scooterLi.querySelector(':scope > a');
+  const megaMenu = scooterLi.querySelector('.mega-dropdown.mega_menu, .mega_menu');
+  if (!megaMenu) return;
+
+  let hoverTimer = null;
+
+  // Helper: load and reveal all lazy images in container
+  function loadScooterImages(container) {
+    const root = container || megaMenu;
+    const lazyImages = root.querySelectorAll('img[data-src]');
+    lazyImages.forEach(img => {
+      const dataSrc = img.getAttribute('data-src');
+      if (dataSrc && (!img.getAttribute('src') || img.getAttribute('src') === '')) {
+        img.setAttribute('src', dataSrc);
+      }
+      img.style.opacity = '1';
+      img.style.visibility = 'visible';
+    });
+  }
+
+  // Open mega menu
+  function openScooterMenu() {
+    if (hoverTimer) {
+      clearTimeout(hoverTimer);
+      hoverTimer = null;
+    }
+    scooterLi.classList.add('show', 'active', 'is-open');
+    megaMenu.classList.add('is-open', 'show');
+    if (triggerLink) {
+      triggerLink.classList.add('active');
+      triggerLink.setAttribute('aria-expanded', 'true');
+    }
+    loadScooterImages();
+  }
+
+  // Schedule close with 280ms debounce (prevents accidental dropping / rớt menu)
+  function scheduleCloseScooterMenu() {
+    if (hoverTimer) clearTimeout(hoverTimer);
+    hoverTimer = setTimeout(() => {
+      closeScooterMenuImmediately();
+    }, 280);
+  }
+
+  // Immediate close
+  function closeScooterMenuImmediately() {
+    if (hoverTimer) {
+      clearTimeout(hoverTimer);
+      hoverTimer = null;
+    }
+    scooterLi.classList.remove('show', 'active', 'is-open');
+    megaMenu.classList.remove('is-open', 'show');
+    if (triggerLink) {
+      triggerLink.classList.remove('active');
+      triggerLink.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  // Desktop Hover triggers (>= 992px)
+  scooterLi.addEventListener('mouseenter', function() {
+    if (window.innerWidth >= 992) {
+      openScooterMenu();
+    }
+  });
+
+  scooterLi.addEventListener('mouseleave', function() {
+    if (window.innerWidth >= 992) {
+      scheduleCloseScooterMenu();
+    }
+  });
+
+  megaMenu.addEventListener('mouseenter', function() {
+    if (window.innerWidth >= 992) {
+      openScooterMenu();
+    }
+  });
+
+  megaMenu.addEventListener('mouseleave', function() {
+    if (window.innerWidth >= 992) {
+      scheduleCloseScooterMenu();
+    }
+  });
+
+  // Close immediately if hovering over sibling top-level menu items
+  document.querySelectorAll('.mega_menu_header.mega-main-menu > li:not(.menu_scooter)').forEach(otherLi => {
+    otherLi.addEventListener('mouseenter', function() {
+      closeScooterMenuImmediately();
+    });
+  });
+
+  // CRITICAL REQUIREMENT: Direct click on "Sản phẩm" (<a href="/xe-may-dien.html">)
+  // Must navigate directly to /xe-may-dien.html!
+  // Intercept in CAPTURE phase so jQuery in main.js cannot preventDefault()!
+  if (triggerLink) {
+    triggerLink.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href && href !== '#' && !href.startsWith('javascript:')) {
+        // Prevent other listeners from stopping navigation
+        e.stopImmediatePropagation();
+        window.location.href = href;
+      }
+    }, true);
+  }
+
+  // Tab switching inside mega menu (#mega_oto_tab)
+  function switchTab(tabElement, targetId) {
+    const tabContainer = megaMenu.querySelector('#mega_oto_tab');
+    if (tabContainer) {
+      tabContainer.querySelectorAll('.tab-menu-xmd, .nav-link').forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+    }
+    tabElement.classList.add('active');
+    tabElement.setAttribute('aria-selected', 'true');
+
+    // Show corresponding tab-pane
+    const allPanes = megaMenu.querySelectorAll('.tab-content > .tab-pane, #block-megamainmenuxemay .tab-pane');
+    allPanes.forEach(pane => {
+      pane.classList.remove('active', 'show', 'in');
+      pane.style.display = 'none';
+    });
+
+    const activePane = megaMenu.querySelector(targetId);
+    if (activePane) {
+      activePane.classList.add('active', 'show', 'in');
+      activePane.style.display = 'block';
+      activePane.style.opacity = '1';
+      loadScooterImages(activePane);
+    }
+  }
+
+  // Bind tab links inside #mega_oto_tab
+  const tabLinks = megaMenu.querySelectorAll('#mega_oto_tab .tab-menu-xmd, #mega_oto_tab .nav-link');
+  tabLinks.forEach(tab => {
+    tab.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        switchTab(this, targetId);
+      }
+    });
+
+    tab.addEventListener('mouseenter', function() {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        switchTab(this, targetId);
+      }
+    });
+  });
+
+  // Ensure clicks on product links inside megaMenu navigate properly
+  megaMenu.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link) {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        e.stopPropagation();
+        switchTab(link, href);
+        return;
+      }
+      // If valid product link, allow normal navigation
+      return;
+    }
+    // Prevent non-link clicks inside dropdown from bubbling up and closing
+    e.stopPropagation();
+  });
+
+  // Close when clicking outside on Desktop
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.menu_scooter')) {
+      closeScooterMenuImmediately();
+    }
+  });
+
+  // Ensure default active tab is properly displayed and its images loaded
+  const defaultActiveTab = megaMenu.querySelector('#mega_oto_tab .nav-link.active, #mega_oto_tab .tab-menu-xmd.active');
+  if (defaultActiveTab) {
+    const targetId = defaultActiveTab.getAttribute('href');
+    if (targetId && targetId.startsWith('#')) {
+      switchTab(defaultActiveTab, targetId);
+    }
+  } else {
+    // Fallback to first tab
+    const firstTab = megaMenu.querySelector('#mega_oto_tab .tab-menu-xmd, #mega_oto_tab .nav-link');
+    if (firstTab) {
+      const targetId = firstTab.getAttribute('href');
+      if (targetId && targetId.startsWith('#')) {
+        switchTab(firstTab, targetId);
+      }
+    }
+  }
+
+  // Pre-load images initially
+  loadScooterImages();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initScooterMenuDropdown);
+} else {
+  initScooterMenuDropdown();
+}
