@@ -1628,10 +1628,17 @@ footer .st-brand img {
 }
 
 @media (max-width: 991px) {
+  #header .logo img,
+  #header .logo a img,
+  #header .header-logo img,
+  #header img.st-logo,
   .v3s-header--bottom .logo img,
+  .v3s-header--bottom .logo a img,
+  .v3s-header--bottom img.st-logo,
   .v3s-header .logo img {
-    height: 54px !important;
-    max-height: 58px !important;
+    height: 38px !important;
+    max-height: 38px !important;
+    width: auto !important;
   }
   .v3s-footer--logo img {
     height: 80px !important;
@@ -3929,11 +3936,160 @@ html, body {
     z-index: 9999 !important;
   }
 
+  /* 2.1 HIDE THE DESKTOP MEGA MENU CONTAINER COMPLETELY ON MOBILE (< 992px) */
+  #block-megamainmenu,
+  #block-megamainmenu *,
+  .mega-menu-xmd#block-megamainmenu {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+
+  /* 2.2 Mobile Header Container Alignment */
+  .v3s-header--bottom .custom-group-user-mobile {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 60px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Left: VinFast Logo only */
+  .v3s-header--bottom .v3s-header-mobile--left {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    height: 60px !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .v3s-header--bottom .logo,
+  .v3s-header--bottom .logo a {
+    display: flex !important;
+    align-items: center !important;
+    height: 60px !important;
+    flex: 0 0 auto !important;
+    text-decoration: none !important;
+  }
+
+  #header .logo img,
+  #header .logo a img,
+  #header .header-logo img,
+  #header img.st-logo,
+  .v3s-header--bottom .logo img,
+  .v3s-header--bottom .logo a img,
+  .v3s-header--bottom img.st-logo,
   .v3s-header-mobile--left .logo img {
-    height: 42px !important;
+    height: 38px !important;
+    max-height: 38px !important;
     width: auto !important;
-    max-height: 42px !important;
     object-fit: contain !important;
+    display: block !important;
+  }
+
+  /* Right: Hamburger button & Account icon */
+  .v3s-header--bottom .v3s-header-mobile--left > ul.mega_menu_header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    height: 60px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    gap: 8px !important;
+    flex: 0 0 auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    width: auto !important;
+  }
+
+  .v3s-header--bottom .v3s-header-mobile--left > ul.mega_menu_header > li {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 60px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .v3s-header--bottom .mega-account {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .v3s-header--bottom .mega-account a.we-mega-menu-li {
+    width: 38px !important;
+    height: 38px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .v3s-header--bottom .mega-account span {
+    display: none !important;
+  }
+
+  /* Hamburger touch target minimum 44x44px (strictly target the hamburger li/button only) */
+  .v3s-header--bottom .mega-submenu,
+  .v3s-header--bottom .mega-submenu ul {
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+    height: 60px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: auto !important;
+  }
+
+  .v3s-header--bottom .mega-submenu li.block-megamainmenu {
+    min-width: 44px !important;
+    min-height: 44px !important;
+    width: 44px !important;
+    height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .v3s-header--bottom .mega-submenu li.block-megamainmenu a.we-mega-menu-li {
+    width: 44px !important;
+    height: 44px !important;
+    display: block !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
   }
 
   /* Universal page top offset to prevent header from overlapping H1/hero */
@@ -3949,19 +4105,6 @@ html, body {
   .dvhm-revamp-page,
   .page-escooter {
     margin-top: 0 !important;
-  }
-
-  /* Hamburger touch target minimum 44x44px */
-  .block-megamainmenu.desktop-hover,
-  .navbar-toggler,
-  .custom-group-user-mobile .block-megamainmenu,
-  .mega-submenu .block-megamainmenu {
-    min-width: 44px !important;
-    min-height: 44px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    cursor: pointer !important;
   }
 
   /* 3. MOBILE DRAWER MENU (#megaMenuModal / #mega-submenu) */
