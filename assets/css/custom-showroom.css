@@ -4450,3 +4450,289 @@ html, body {
     bottom: 80px !important;
   }
 }
+
+
+/* ==========================================================================
+   VINFAST TÂY SÀI GÒN - HỆ THỐNG 2 CHI NHÁNH CHUẨN ĐỒNG BỘ & ĐẸP ĐỀU
+   ========================================================================== */
+.vf-branches-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.vf-branches-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+@media (max-width: 820px) {
+  .vf-branches-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.vf-branch-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.vf-branch-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1464f4 0%, #002a6c 100%);
+  opacity: 0.95;
+}
+
+.vf-branch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(20, 100, 244, 0.12);
+  border-color: #93c5fd;
+}
+
+.vf-branch-header {
+  margin-bottom: 14px;
+}
+
+.vf-branch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.vf-branch-badge--hq {
+  background: linear-gradient(135deg, #1464f4 0%, #002a6c 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(20, 100, 244, 0.3);
+}
+
+.vf-branch-badge--cn2 {
+  background: linear-gradient(135deg, #002a6c 0%, #1e293b 100%);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 42, 108, 0.25);
+}
+
+.vf-branch-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #002a6c;
+  margin: 0 0 14px;
+  line-height: 1.35;
+}
+
+.vf-branch-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vf-branch-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #475569;
+}
+
+.vf-branch-info-item .icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.vf-branch-info-item strong {
+  color: #1e293b;
+}
+
+.vf-branch-hotline-link {
+  color: #1464f4;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 0.98rem;
+}
+
+.vf-branch-hotline-link:hover {
+  text-decoration: underline;
+  color: #0f52cc;
+}
+
+.vf-branch-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.vf-branch-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.vf-branch-tag--blue {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.vf-branch-tag--green {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.vf-branch-tag--amber {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.vf-branch-tag--purple {
+  background: #f3e8ff;
+  color: #7e22ce;
+}
+
+.vf-branch-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.vf-branch-btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 11px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.vf-branch-btn--primary {
+  background: #1464f4;
+  color: #ffffff !important;
+  border: 1px solid #1464f4;
+  box-shadow: 0 3px 10px rgba(20, 100, 244, 0.25);
+}
+
+.vf-branch-btn--primary:hover {
+  background: #0f52cc;
+  border-color: #0f52cc;
+  box-shadow: 0 5px 14px rgba(20, 100, 244, 0.35);
+  color: #ffffff !important;
+}
+
+.vf-branch-btn--outline {
+  background: #ffffff;
+  color: #1464f4 !important;
+  border: 1px solid #cbd5e1;
+}
+
+.vf-branch-btn--outline:hover {
+  background: #f8fafc;
+  border-color: #1464f4;
+  color: #0f52cc !important;
+}
+
+/* Đồng bộ lưới showroom & xưởng dịch vụ trên các trang con */
+#showrooms-grid.vf-showroom-grid,
+.dvhm-dealer-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  max-width: 1080px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 820px) {
+  #showrooms-grid.vf-showroom-grid,
+  .dvhm-dealer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+}
+
+/* Chân trang danh sách 2 chi nhánh (.st-stores) đều & đẹp trên mọi trang sản phẩm */
+.st-stores {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 640px) {
+  .st-stores {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+}
+
+.st-stores li {
+  background: #1e293b !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 10px !important;
+  padding: 14px 16px !important;
+  line-height: 1.6 !important;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.st-stores li:hover {
+  border-color: #3b82f6 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.st-stores li b {
+  color: #60a5fa !important;
+  font-size: 0.95rem !important;
+  display: inline-block !important;
+  margin-bottom: 4px !important;
+}
+
+.st-stores li a {
+  color: #e2e8f0 !important;
+  text-decoration: none !important;
+}
+
+.st-stores li a:hover {
+  color: #93c5fd !important;
+  text-decoration: underline !important;
+}

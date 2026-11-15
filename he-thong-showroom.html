@@ -533,55 +533,74 @@
 </div>
 <section style="padding:60px 0; background:#f8fafc;">
 <div class="container" style="max-width:1200px; margin:0 auto; padding:0 20px;">
-<div class="vf-showroom-grid" id="showrooms-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(350px, 1fr)); gap:25px;">
-<div class="vf-showroom-card headquarter" style="background:#fff; border-radius:12px; padding:25px; border:2px solid #1464f4; box-shadow:0 6px 18px rgba(20,100,244,0.08); display:flex; flex-direction:column; justify-content:space-between;">
+<div class="vf-branches-wrapper">
+<div class="vf-branches-grid" id="showrooms-grid">
+<!-- Chi nhánh 1 -->
+<div class="vf-branch-card">
 <div>
-<span style="display:inline-block; background:#1464f4; color:#fff; font-size:0.75rem; font-weight:800; padding:4px 10px; border-radius:4px; margin-bottom:8px; text-transform:uppercase;">TRỤ SỞ CHÍNH</span>
-<h3 class="vf-showroom-name" style="font-size:1.25rem; font-weight:800; color:#002a6c; margin:0 0 10px;">⭐ VinFast Tây Sài Gòn - Chi nhánh 1 (Trụ sở chính)</h3>
-<div class="vf-showroom-addr" style="color:#475569; font-size:0.95rem; line-height:1.6; margin-bottom:12px;">
-              📍 <strong>Địa chỉ:</strong> 982 Tỉnh Lộ 10, P. Tân Tạo, Q. Bình Tân, TP. Hồ Chí Minh
-            </div>
-<div class="vf-showroom-phone" style="margin-bottom:12px; font-size:0.95rem;">
-              📞 <strong>Hotline:</strong> <a href="tel:0933792866" style="color:#1464f4; font-weight:700;">0933 792 866</a>
+<div class="vf-branch-header">
+<span class="vf-branch-badge vf-branch-badge--hq">⭐ TRỤ SỞ CHÍNH</span>
+<h3 class="vf-branch-name">VinFast Tây Sài Gòn - Chi nhánh 1</h3>
 </div>
-<div style="font-size:0.85rem; color:#64748b; margin-bottom:15px;">
-              ⏰ <strong>Giờ phục vụ:</strong> 08:00 - 20:00 (Cả Thứ Bảy &amp; Chủ Nhật)
-            </div>
-<div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:15px;">
-<span style="background:#eff6ff; color:#1d4ed8; font-size:0.75rem; padding:3px 8px; border-radius:4px; font-weight:600;">Xe Máy Điện Mới</span>
-<span style="background:#f0fdf4; color:#15803d; font-size:0.75rem; padding:3px 8px; border-radius:4px; font-weight:600;">Lái Thử Tận Nhà</span>
-<span style="background:#fef3c7; color:#b45309; font-size:0.75rem; padding:3px 8px; border-radius:4px; font-weight:600;">Xưởng 3S</span>
-<span style="background:#f3e8ff; color:#7e22ce; font-size:0.75rem; padding:3px 8px; border-radius:4px; font-weight:600;">Trạm Sạc LFP</span>
+<ul class="vf-branch-info-list">
+<li class="vf-branch-info-item">
+<span class="icon">📍</span>
+<span><strong>Địa chỉ:</strong> 982 Tỉnh Lộ 10, P. Tân Tạo, Q. Bình Tân, TP. Hồ Chí Minh</span>
+</li>
+<li class="vf-branch-info-item">
+<span class="icon">📞</span>
+<span><strong>Hotline:</strong> <a class="vf-branch-hotline-link" href="tel:0933792866">0933 792 866</a></span>
+</li>
+<li class="vf-branch-info-item">
+<span class="icon">⏰</span>
+<span><strong>Giờ phục vụ:</strong> 08:00 - 20:00 (Cả Thứ Bảy &amp; Chủ Nhật)</span>
+</li>
+</ul>
+<div class="vf-branch-tags">
+<span class="vf-branch-tag vf-branch-tag--blue">Xe Máy Điện Mới</span>
+<span class="vf-branch-tag vf-branch-tag--green">Lái Thử Tận Nhà</span>
+<span class="vf-branch-tag vf-branch-tag--amber">Xưởng 3S Chính Hãng</span>
+<span class="vf-branch-tag vf-branch-tag--purple">Trạm Sạc LFP</span>
 </div>
 </div>
-<div class="vf-showroom-actions" style="display:flex; gap:10px; margin-top:10px;">
-<a class="btn btn-primary" href="https://maps.app.goo.gl/sAMwbv28LYnsaUjdA" rel="noopener" style="flex:1; text-align:center; padding:10px 14px; font-size:0.85rem; background:#1464f4; color:#fff; border-radius:6px; text-decoration:none; font-weight:700;" target="_blank">🗺️ Google Maps</a>
-<a class="btn btn-outline" href="tel:0933792866" style="flex:1; text-align:center; padding:10px 14px; font-size:0.85rem; border:1px solid #1464f4; color:#1464f4; border-radius:6px; text-decoration:none; font-weight:700;">📞 Gọi ngay</a>
+<div class="vf-branch-actions">
+<a class="vf-branch-btn vf-branch-btn--primary" href="https://maps.app.goo.gl/sAMwbv28LYnsaUjdA" rel="noopener" target="_blank">🗺️ Google Maps</a>
+<a class="vf-branch-btn vf-branch-btn--outline" href="tel:0933792866">📞 Gọi ngay</a>
 </div>
 </div>
-<div class="vf-showroom-card" style="background:#fff; border-radius:12px; padding:25px; border:1px solid #e2e8f0; box-shadow:0 6px 18px rgba(0,0,0,0.04); display:flex; flex-direction:column; justify-content:space-between;">
+<!-- Chi nhánh 2 -->
+<div class="vf-branch-card">
 <div>
-<span style="display:inline-block; background:#002a6c; color:#fff; font-size:0.75rem; font-weight:800; padding:4px 10px; border-radius:4px; margin-bottom:8px; text-transform:uppercase;">CHI NHÁNH 2</span>
-<h3 class="vf-showroom-name" style="font-size:1.25rem; font-weight:800; color:#002a6c; margin:0 0 10px;">🏢 VinFast Tây Sài Gòn - Chi nhánh 2</h3>
-<div class="vf-showroom-addr" style="color:#475569; font-size:0.95rem; line-height:1.6; margin-bottom:12px;">
-              📍 <strong>Địa chỉ:</strong> 212 Nguyễn Thị Tú, P. Bình Hưng Hòa B, Q. Bình Tân, TP. Hồ Chí Minh
-            </div>
-<div class="vf-showroom-phone" style="margin-bottom:12px; font-size:0.95rem;">
-              📞 <strong>Hotline:</strong> <a href="tel:0933792866" style="color:#1464f4; font-weight:700;">0933 792 866</a>
+<div class="vf-branch-header">
+<span class="vf-branch-badge vf-branch-badge--cn2">🏢 CHI NHÁNH 2</span>
+<h3 class="vf-branch-name">VinFast Tây Sài Gòn - Chi nhánh 2</h3>
 </div>
-<div style="font-size:0.85rem; color:#64748b; margin-bottom:15px;">
-              ⏰ <strong>Giờ phục vụ:</strong> 08:00 - 20:00 (Cả Thứ Bảy &amp; Chủ Nhật)
-            </div>
-<div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:15px;">
-<span style="background:#eff6ff; color:#1d4ed8; font-size:0.75rem; padding:3px 8px; border-radius:4px; font-weight:600;">Xe Máy Điện Mới</span>
-<span style="background:#f0fdf4; color:#15803d; font-size:0.75rem; padding:3px 8px; border-radius:4px; font-weight:600;">Lái Thử Tận Nhà</span>
-<span style="background:#fef3c7; color:#b45309; font-size:0.75rem; padding:3px 8px; border-radius:4px; font-weight:600;">Xưởng 3S</span>
-<span style="background:#f3e8ff; color:#7e22ce; font-size:0.75rem; padding:3px 8px; border-radius:4px; font-weight:600;">Trạm Sạc LFP</span>
+<ul class="vf-branch-info-list">
+<li class="vf-branch-info-item">
+<span class="icon">📍</span>
+<span><strong>Địa chỉ:</strong> 212 Nguyễn Thị Tú, P. Bình Hưng Hòa B, Q. Bình Tân, TP. Hồ Chí Minh</span>
+</li>
+<li class="vf-branch-info-item">
+<span class="icon">📞</span>
+<span><strong>Hotline:</strong> <a class="vf-branch-hotline-link" href="tel:0933792866">0933 792 866</a></span>
+</li>
+<li class="vf-branch-info-item">
+<span class="icon">⏰</span>
+<span><strong>Giờ phục vụ:</strong> 08:00 - 20:00 (Cả Thứ Bảy &amp; Chủ Nhật)</span>
+</li>
+</ul>
+<div class="vf-branch-tags">
+<span class="vf-branch-tag vf-branch-tag--blue">Xe Máy Điện Mới</span>
+<span class="vf-branch-tag vf-branch-tag--green">Lái Thử Tận Nhà</span>
+<span class="vf-branch-tag vf-branch-tag--amber">Xưởng 3S Chính Hãng</span>
+<span class="vf-branch-tag vf-branch-tag--purple">Trạm Sạc LFP</span>
 </div>
 </div>
-<div class="vf-showroom-actions" style="display:flex; gap:10px; margin-top:10px;">
-<a class="btn btn-primary" href="https://maps.app.goo.gl/Gn21JNmfy1eB9f9TA" rel="noopener" style="flex:1; text-align:center; padding:10px 14px; font-size:0.85rem; background:#1464f4; color:#fff; border-radius:6px; text-decoration:none; font-weight:700;" target="_blank">🗺️ Google Maps</a>
-<a class="btn btn-outline" href="tel:0933792866" style="flex:1; text-align:center; padding:10px 14px; font-size:0.85rem; border:1px solid #1464f4; color:#1464f4; border-radius:6px; text-decoration:none; font-weight:700;">📞 Gọi ngay</a>
+<div class="vf-branch-actions">
+<a class="vf-branch-btn vf-branch-btn--primary" href="https://maps.app.goo.gl/Gn21JNmfy1eB9f9TA" rel="noopener" target="_blank">🗺️ Google Maps</a>
+<a class="vf-branch-btn vf-branch-btn--outline" href="tel:0933792866">📞 Gọi ngay</a>
+</div>
+</div>
 </div>
 </div>
 </div>
