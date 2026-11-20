@@ -1289,7 +1289,7 @@ function initMobileResponsiveEnhancements() {
     bar.id = 'v3sMobileBottomBar';
     bar.className = 'v3s-mobile-sticky-bar d-md-none';
     bar.innerHTML = `
-      <a href="tel:0933792866" class="v3s-mobile-sticky-btn v3s-mobile-sticky-btn--call" aria-label="Gọi hotline VinFast Tây Sài Gòn">
+      <a href="javascript:void(0)" data-open-phone-modal="true" class="v3s-mobile-sticky-btn v3s-mobile-sticky-btn--call" aria-label="Gọi hotline VinFast Tây Sài Gòn">
         <svg fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
         <span>Gọi ngay</span>
       </a>
@@ -1466,4 +1466,133 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initMobileResponsiveEnhancements);
 } else {
   initMobileResponsiveEnhancements();
+}
+
+
+
+// ==========================================================================
+// MODAL CHỌN SỐ ĐIỆN THOẠI CẢ 2 CHI NHÁNH KHI BẤM NÚT NỔI HOẶC GỌI NGAY
+// ==========================================================================
+function initPhoneModal() {
+  if (document.getElementById('vfPhoneModalBackdrop')) return;
+
+  const modalHtml = `
+    <div class="vf-phone-modal-backdrop" id="vfPhoneModalBackdrop" aria-hidden="true">
+      <div class="vf-phone-modal-card" role="dialog" aria-modal="true" aria-labelledby="vfPhoneModalTitle">
+        <div class="vf-phone-modal-header">
+          <div>
+            <h3 id="vfPhoneModalTitle">Hotline Cửa Hàng Trưởng</h3>
+            <p>VinFast Tây Sài Gòn — Vui lòng chọn chi nhánh để gọi ngay:</p>
+          </div>
+          <button type="button" class="vf-phone-modal-close" id="vfPhoneModalClose" aria-label="Đóng">&times;</button>
+        </div>
+
+        <div class="vf-phone-modal-body">
+          <!-- Chi nhánh 1 -->
+          <div class="vf-phone-branch-item">
+            <div class="vf-phone-branch-head">
+              <span class="vf-phone-badge vf-phone-badge--cn1">⭐ CHI NHÁNH 1 (TRỤ SỞ CHÍNH)</span>
+              <span class="vf-phone-branch-status">● Đang mở cửa</span>
+            </div>
+            <div class="vf-phone-branch-name">VinFast Tây Sài Gòn - Chi nhánh 1</div>
+            <div class="vf-phone-branch-addr">📍 982 Tỉnh Lộ 10, P. Tân Tạo, Q. Bình Tân, TP.HCM</div>
+            <div class="vf-phone-branch-manager">👤 Cửa hàng trưởng chi nhánh 1: <strong>0387 775 158</strong></div>
+            <div class="vf-phone-branch-call-row">
+              <a href="tel:0387775158" class="vf-phone-call-btn">
+                <span>📞</span>
+                <span>Gọi 0387 775 158</span>
+              </a>
+              <a href="https://maps.app.goo.gl/sAMwbv28LYnsaUjdA" target="_blank" rel="noopener noreferrer" class="vf-phone-map-btn">🗺️ Bản đồ</a>
+            </div>
+          </div>
+
+          <!-- Chi nhánh 2 -->
+          <div class="vf-phone-branch-item">
+            <div class="vf-phone-branch-head">
+              <span class="vf-phone-badge vf-phone-badge--cn2">🏢 CHI NHÁNH 2</span>
+              <span class="vf-phone-branch-status">● Đang mở cửa</span>
+            </div>
+            <div class="vf-phone-branch-name">VinFast Tây Sài Gòn - Chi nhánh 2</div>
+            <div class="vf-phone-branch-addr">📍 212 Nguyễn Thị Tú, P. Bình Hưng Hòa B, Q. Bình Tân, TP.HCM</div>
+            <div class="vf-phone-branch-manager">👤 Cửa hàng trưởng chi nhánh 2: <strong>0902 076 265</strong></div>
+            <div class="vf-phone-branch-call-row">
+              <a href="tel:0902076265" class="vf-phone-call-btn">
+                <span>📞</span>
+                <span>Gọi 0902 076 265</span>
+              </a>
+              <a href="https://maps.app.goo.gl/Gn21JNmfy1eB9f9TA" target="_blank" rel="noopener noreferrer" class="vf-phone-map-btn">🗺️ Bản đồ</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="vf-phone-modal-footer">
+          <span>💬 Tư vấn trực tuyến qua Zalo OA:</span>
+          <a href="https://zalo.me/1295417830975662535" target="_blank" rel="noopener noreferrer" class="vf-phone-modal-zalo-btn">Nhắn Zalo OA</a>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.body.insertAdjacentHTML('beforeend', modalHtml);
+
+  const backdrop = document.getElementById('vfPhoneModalBackdrop');
+  const closeBtn = document.getElementById('vfPhoneModalClose');
+
+  function openModal() {
+    backdrop.classList.add('is-open');
+    backdrop.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    backdrop.classList.remove('is-open');
+    backdrop.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  window.openPhoneModal = openModal;
+  window.closePhoneModal = closeModal;
+
+  // Auto open if hash is #phone-modal or #hotline
+  if (window.location.hash === '#phone-modal' || window.location.hash === '#hotline') {
+    setTimeout(openModal, 400);
+  }
+  window.addEventListener('hashchange', () => {
+    if (window.location.hash === '#phone-modal' || window.location.hash === '#hotline') {
+      openModal();
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+  }
+  backdrop.addEventListener('click', (e) => {
+    if (e.target === backdrop) closeModal();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && backdrop.classList.contains('is-open')) {
+      closeModal();
+    }
+  });
+
+  // Attach click listener globally to all phone triggers
+  document.addEventListener('click', (e) => {
+    const trigger = e.target.closest('.vf-floating-btn--phone, .v3s-mobile-sticky-btn--call, [data-open-phone-modal], a[href="tel:0933792866"]');
+    if (trigger) {
+      // Don't intercept specific branch direct calls like tel:0387775158 or tel:0902076265
+      const href = trigger.getAttribute('href') || '';
+      if (href.includes('0387775158') || href.includes('0902076265')) return;
+      e.preventDefault();
+      e.stopPropagation();
+      openModal();
+    }
+  });
+}
+
+// Auto init phone modal
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPhoneModal);
+} else {
+  initPhoneModal();
 }

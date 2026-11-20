@@ -4859,3 +4859,308 @@ html, body {
   line-height: 1 !important;
   user-select: none !important;
 }
+
+
+
+/* ==========================================================================
+   POPUP CHỌN SỐ ĐIỆN THOẠI 2 CHI NHÁNH KHI BẤM NÚT NỔI HOẶC NÚT GỌI NGAY
+   ========================================================================== */
+.vf-phone-modal-backdrop {
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(15, 23, 42, 0.72) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 16px !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity 0.25s ease, visibility 0.25s ease !important;
+  box-sizing: border-box !important;
+}
+
+.vf-phone-modal-backdrop.is-open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+.vf-phone-modal-card {
+  background: #ffffff !important;
+  width: 100% !important;
+  max-width: 460px !important;
+  border-radius: 20px !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35) !important;
+  overflow: hidden !important;
+  transform: scale(0.92) translateY(20px) !important;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-sizing: border-box !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+.vf-phone-modal-backdrop.is-open .vf-phone-modal-card {
+  transform: scale(1) translateY(0) !important;
+}
+
+.vf-phone-modal-header {
+  background: linear-gradient(135deg, #002a6c 0%, #1464f4 100%) !important;
+  color: #ffffff !important;
+  padding: 18px 20px !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+.vf-phone-modal-header h3 {
+  margin: 0 !important;
+  font-size: 1.15rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  line-height: 1.3 !important;
+}
+
+.vf-phone-modal-header p {
+  margin: 4px 0 0 0 !important;
+  font-size: 0.85rem !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  line-height: 1.4 !important;
+}
+
+.vf-phone-modal-close {
+  position: absolute !important;
+  top: 14px !important;
+  right: 14px !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-size: 22px !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background 0.2s, transform 0.2s !important;
+}
+
+.vf-phone-modal-close:hover {
+  background: rgba(255, 255, 255, 0.35) !important;
+  transform: scale(1.1) !important;
+}
+
+.vf-phone-modal-body {
+  padding: 16px 18px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  max-height: 72vh !important;
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+}
+
+.vf-phone-branch-item {
+  background: #f8fafc !important;
+  border: 1.5px solid #e2e8f0 !important;
+  border-radius: 14px !important;
+  padding: 13px 15px !important;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+}
+
+.vf-phone-branch-item:hover {
+  border-color: #1464f4 !important;
+  box-shadow: 0 6px 18px rgba(20, 100, 244, 0.12) !important;
+  transform: translateY(-2px) !important;
+}
+
+.vf-phone-branch-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+  margin-bottom: 6px !important;
+}
+
+.vf-phone-badge {
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  padding: 3px 8px !important;
+  border-radius: 6px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.3px !important;
+}
+
+.vf-phone-badge--cn1 {
+  background: #eff6ff !important;
+  color: #1d4ed8 !important;
+  border: 1px solid #bfdbfe !important;
+}
+
+.vf-phone-badge--cn2 {
+  background: #f5f3ff !important;
+  color: #6d28d9 !important;
+  border: 1px solid #ddd6fe !important;
+}
+
+.vf-phone-branch-status {
+  font-size: 0.75rem !important;
+  color: #16a34a !important;
+  font-weight: 700 !important;
+}
+
+.vf-phone-branch-name {
+  font-size: 1.02rem !important;
+  font-weight: 800 !important;
+  color: #0f172a !important;
+  margin-bottom: 4px !important;
+}
+
+.vf-phone-branch-addr {
+  font-size: 0.84rem !important;
+  color: #475569 !important;
+  margin-bottom: 6px !important;
+  line-height: 1.4 !important;
+}
+
+.vf-phone-branch-manager {
+  font-size: 0.88rem !important;
+  color: #0369a1 !important;
+  font-weight: 700 !important;
+  margin-bottom: 10px !important;
+}
+
+.vf-phone-branch-call-row {
+  display: flex !important;
+  gap: 8px !important;
+  box-sizing: border-box !important;
+}
+
+.vf-phone-call-btn {
+  flex: 1 1 auto !important;
+  background: #10b981 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 800 !important;
+  font-size: 0.92rem !important;
+  padding: 10px 14px !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35) !important;
+  transition: background 0.2s, transform 0.2s !important;
+  box-sizing: border-box !important;
+}
+
+.vf-phone-call-btn:hover {
+  background: #059669 !important;
+  transform: translateY(-2px) !important;
+  color: #ffffff !important;
+}
+
+.vf-phone-map-btn {
+  flex: 0 0 auto !important;
+  background: #ffffff !important;
+  color: #334155 !important;
+  border: 1px solid #cbd5e1 !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  font-size: 0.85rem !important;
+  padding: 10px 12px !important;
+  border-radius: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  transition: background 0.2s !important;
+  box-sizing: border-box !important;
+}
+
+.vf-phone-map-btn:hover {
+  background: #f1f5f9 !important;
+  color: #1e293b !important;
+}
+
+.vf-phone-modal-footer {
+  background: #f8fafc !important;
+  border-top: 1px solid #e2e8f0 !important;
+  padding: 12px 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+  box-sizing: border-box !important;
+}
+
+.vf-phone-modal-footer span {
+  font-size: 0.82rem !important;
+  color: #475569 !important;
+}
+
+.vf-phone-modal-zalo-btn {
+  background: #0068ff !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  white-space: nowrap !important;
+  transition: opacity 0.2s !important;
+  box-sizing: border-box !important;
+}
+
+.vf-phone-modal-zalo-btn:hover {
+  opacity: 0.9 !important;
+  color: #ffffff !important;
+}
+
+@media (max-width: 600px) {
+  .vf-phone-modal-backdrop {
+    align-items: flex-end !important;
+    padding: 0 !important;
+  }
+  .vf-phone-modal-card {
+    border-radius: 20px 20px 0 0 !important;
+    max-height: 88vh !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    transform: translateY(100%) !important;
+  }
+  .vf-phone-modal-backdrop.is-open .vf-phone-modal-card {
+    transform: translateY(0) !important;
+  }
+  .vf-phone-modal-header {
+    padding: 16px 14px !important;
+  }
+  .vf-phone-modal-header h3 {
+    font-size: 1.08rem !important;
+  }
+  .vf-phone-modal-body {
+    padding: 12px !important;
+    gap: 10px !important;
+  }
+  .vf-phone-branch-item {
+    padding: 12px 12px !important;
+  }
+  .vf-phone-call-btn {
+    font-size: 0.86rem !important;
+    padding: 9px 10px !important;
+  }
+  .vf-phone-map-btn {
+    font-size: 0.8rem !important;
+    padding: 9px 8px !important;
+  }
+  .vf-phone-modal-footer {
+    padding: 10px 14px !important;
+  }
+}
