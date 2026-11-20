@@ -5252,3 +5252,239 @@ html, body {
     border-radius: 12px !important;
   }
 }
+/* ==========================================================================
+   ENHANCED UX/UI FOR DEALER SUPPORT & SERVICE BOOKING FORM (FULL-WIDTH)
+   ========================================================================== */
+.st-dealer-support {
+  background: #f8fafc;
+  padding: 64px 0 80px;
+  border-top: 1px solid #e2e8f0;
+  position: relative;
+  z-index: 2;
+}
+
+.st-dealer-support .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.st-dealer-header {
+  text-align: center;
+  max-width: 840px;
+  margin: 0 auto 36px;
+}
+
+.st-dealer-header__badge {
+  background: #002a6c;
+  color: #fff;
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.st-dealer-header__title {
+  color: #002a6c;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.35;
+  margin: 0 0 12px;
+}
+
+.st-dealer-header__desc {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Branch Cards Enhancements */
+.st-dealer-support .vf-branches-wrapper {
+  max-width: 1080px;
+  margin: 0 auto 48px;
+  padding: 0;
+}
+
+.st-dealer-support .vf-branches-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.st-dealer-support .vf-branch-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.st-dealer-support .vf-branch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 42, 108, 0.1);
+  border-color: #93c5fd;
+}
+
+.st-dealer-support .vf-branch-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #002a6c;
+  margin: 8px 0 12px;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.st-dealer-support .vf-branch-btn {
+  white-space: nowrap;
+  font-size: 0.92rem;
+  min-height: 44px;
+}
+
+/* Service Booking Form Box */
+.st-booking-box {
+  background: linear-gradient(135deg, #002a6c 0%, #1464f4 100%);
+  border-radius: 20px;
+  padding: 44px 48px;
+  color: #ffffff;
+  max-width: 920px;
+  margin: 0 auto;
+  box-shadow: 0 14px 40px rgba(0, 42, 108, 0.18);
+  box-sizing: border-box;
+}
+
+.st-booking-box__title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.st-booking-box__desc {
+  font-size: 15px;
+  opacity: 0.92;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.st-booking-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
+.st-booking-form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.95;
+}
+
+.st-booking-form input,
+.st-booking-form select,
+.st-booking-form textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1e293b;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.st-booking-form input,
+.st-booking-form select {
+  height: 46px;
+  padding: 0 14px;
+}
+
+.st-booking-form textarea {
+  height: 80px;
+  padding: 12px 14px;
+  resize: none;
+}
+
+.st-booking-btn {
+  background: #ffffff;
+  color: #1464f4;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 14px 44px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease;
+}
+
+.st-booking-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.28);
+  background: #f8fafc;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .st-dealer-support .vf-branch-name {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  .st-dealer-support {
+    padding: 40px 0 60px;
+  }
+  .st-dealer-header__title {
+    font-size: 24px;
+  }
+  .st-dealer-support .vf-branches-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .st-booking-box {
+    padding: 32px 20px;
+    border-radius: 16px;
+  }
+  .st-booking-box__title {
+    font-size: 20px;
+  }
+  .st-booking-form {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .st-booking-btn {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}
+/* Branch Actions Mobile Optimization */
+@media (max-width: 540px) {
+  .st-dealer-support .vf-branch-actions {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .st-dealer-support .vf-branch-btn {
+    width: 100% !important;
+    min-height: 44px !important;
+    font-size: 0.95rem !important;
+    justify-content: center !important;
+  }
+}
