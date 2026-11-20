@@ -4736,3 +4736,66 @@ html, body {
   color: #93c5fd !important;
   text-decoration: underline !important;
 }
+
+
+/* ==========================================================================
+   CỤM NÚT NỔI LIÊN HỆ GÓC PHẢI (HOTLINE & ZALO CHUẨN CÓ CHỮ ZALO)
+   ========================================================================== */
+.vf-floating-contact {
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .vf-floating-contact {
+    bottom: 85px !important;
+    right: 16px !important;
+    gap: 10px !important;
+  }
+}
+
+.vf-floating-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  position: relative;
+}
+
+.vf-floating-btn:hover {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.vf-floating-btn--phone {
+  background: #10b981 !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4) !important;
+}
+
+.vf-floating-btn--zalo {
+  background: #0068ff !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(0, 104, 255, 0.45) !important;
+}
+
+.vf-floating-btn--zalo .zalo-text {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 15px !important;
+  color: #ffffff !important;
+  letter-spacing: -0.2px !important;
+  line-height: 1 !important;
+  user-select: none;
+}
