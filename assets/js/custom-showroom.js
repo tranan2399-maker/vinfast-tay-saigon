@@ -414,7 +414,7 @@ function renderProducts(category = 'all') {
           </div>
 
           <div class="vf-card-actions">
-            <a href="https://zalo.me/0933792866" target="_blank" class="btn btn-zalo">
+            <a href="https://zalo.me/1295417830975662535" target="_blank" class="btn btn-zalo">
               💬 Báo giá Zalo
             </a>
             <a href="#dang-ky" class="btn btn-outline" onclick="selectScooterForLead('${p.name}')">
@@ -1293,7 +1293,7 @@ function initMobileResponsiveEnhancements() {
         <svg fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
         <span>Gọi ngay</span>
       </a>
-      <a href="https://zalo.me/0933792866" target="_blank" rel="noopener noreferrer" class="v3s-mobile-sticky-btn v3s-mobile-sticky-btn--zalo" aria-label="Chat Zalo VinFast Tây Sài Gòn">
+      <a href="https://zalo.me/1295417830975662535" target="_blank" rel="noopener noreferrer" class="v3s-mobile-sticky-btn v3s-mobile-sticky-btn--zalo" aria-label="Chat Zalo VinFast Tây Sài Gòn">
         <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.14 2 11.25c0 2.87 1.44 5.43 3.69 7.07L4.5 22l4.02-1.34C9.72 20.85 10.84 21 12 21c5.52 0 10-4.14 10-9.25S17.52 2 12 2z"/></svg>
         <span>Chat Zalo</span>
       </a>
