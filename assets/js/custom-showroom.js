@@ -634,18 +634,30 @@ function initLeadForm() {
   });
 }
 
-function showToast(message) {
+function showToast(message, type = 'success') {
   let toast = document.querySelector('.vf-toast');
   if (!toast) {
     toast = document.createElement('div');
     toast.className = 'vf-toast';
     document.body.appendChild(toast);
   }
-  toast.textContent = message;
-  toast.style.display = 'block';
-  setTimeout(() => {
-    toast.style.display = 'none';
-  }, 5000);
+  toast.innerHTML = `
+    <div class="vf-toast__icon">✅</div>
+    <div class="vf-toast__content">
+      <div class="vf-toast__title">Gửi Yêu Cầu Thành Công!</div>
+      <div class="vf-toast__msg">${message}</div>
+    </div>
+    <button type="button" class="vf-toast__close" aria-label="Đóng thông báo">&times;</button>
+  `;
+  const closeBtn = toast.querySelector('.vf-toast__close');
+  if (closeBtn) {
+    closeBtn.onclick = () => { toast.classList.remove('is-visible'); };
+  }
+  toast.classList.add('is-visible');
+  clearTimeout(toast._timeout);
+  toast._timeout = setTimeout(() => {
+    toast.classList.remove('is-visible');
+  }, 6000);
 }
 
 // ==========================================
