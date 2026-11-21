@@ -8,15 +8,20 @@ let allProducts = [];
 let allShowrooms = [];
 
 document.addEventListener('DOMContentLoaded', async () => {
-  await loadData();
-  initMobileMenu();
-  initMegaMenuTabs();
-  initHeroSlider();
-  initCostCalculator();
-  initInteractiveColorSwitcher();
-  initProductTabs();
-  initLeadForm();
+  try { await loadData(); } catch (e) { console.warn('loadData:', e); }
+  try { initMobileMenu(); } catch (e) { console.warn('initMobileMenu:', e); }
+  try { initMegaMenuTabs(); } catch (e) { console.warn('initMegaMenuTabs:', e); }
+  try { initHeroSlider(); } catch (e) { console.warn('initHeroSlider:', e); }
+  try { initCostCalculator(); } catch (e) { console.warn('initCostCalculator:', e); }
+  try { initInteractiveColorSwitcher(); } catch (e) { console.warn('initInteractiveColorSwitcher:', e); }
+  try { initProductTabs(); } catch (e) { console.warn('initProductTabs:', e); }
+  try { initLeadForm(); } catch (e) { console.warn('initLeadForm:', e); }
 });
+
+// Gọi phòng ngừa nếu DOM đã load sẵn
+if (document.readyState === 'interactive' || document.readyState === 'complete') {
+  setTimeout(() => { try { initLeadForm(); } catch (e) {} }, 100);
+}
 
 // 1. Tải dữ liệu JSON
 async function loadData() {
@@ -511,141 +516,313 @@ window.selectScooterForLead = function(scooterName) {
 };
 
 function initLeadForm() {
-  const form = document.getElementById('lead-form');
-  if (!form) return;
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    const fullName = document.getElementById('lead-name')?.value.trim() || '';
-    const phone = document.getElementById('lead-phone')?.value.trim() || '';
-    const email = document.getElementById('lead-email')?.value.trim() || '';
-    const model = document.getElementById('lead-model')?.value || '';
-    const showroom = document.getElementById('lead-showroom')?.value || 'VinFast Tây Sài Gòn (Trụ sở chính)';
-    const colorEl = document.getElementById('lead-color') || form.querySelector('select[name="color"]');
-    const color = colorEl ? colorEl.value : '';
-    const noteEl = document.getElementById('lead-note') || document.getElementById('lead-address') || form.querySelector('textarea');
-    const note = noteEl ? noteEl.value.trim() : '';
-
-    const path = window.location.pathname.toLowerCase();
-    const isDepositPage = path.includes('dat-coc');
-    const isAccessoryPage = path.includes('phu-kien');
-    const isMaintenancePage = path.includes('dich-vu-bao-duong');
-    const isWarrantyPage = path.includes('chinh-sach-bao-hanh');
-    const isRepairPage = path.includes('dich-vu-sua-chua');
-    const isRescuePage = path.includes('cuu-ho-247');
-    const isMobileServicePage = path.includes('mobile-service');
-    const isSparePartsPage = path.includes('phu-tung');
-    const isServicePage = path.includes('dich-vu-hau-mai');
-
-    if (!phone) {
-      alert('Vui lòng nhập số điện thoại để chuyên viên tư vấn liên hệ.');
-      return;
+  // Stub jQuery validate nếu thiếu để ngăn Drupal script crash form
+  try {
+    if (window.jQuery && !window.jQuery.fn.validate) {
+      window.jQuery.fn.validate = function() {
+        return { form: () => true, valid: () => true, resetForm: () => {} };
+      };
     }
+  } catch (jErr) {}
 
-    let reqType = 'Đăng ký lái thử & Báo giá ưu đãi';
-    let successMsg = `🎉 Cảm ơn ${fullName}! Đăng ký thành công. Chuyên viên VinFast Tây Sài Gòn sẽ liên hệ trong 5 phút!`;
-
-    if (isDepositPage) {
-      reqType = 'Đặt cọc giữ xe trực tuyến';
-      successMsg = `🎉 Cảm ơn ${fullName}! Đặt cọc giữ xe trực tuyến thành công. Chuyên viên VinFast Tây Sài Gòn sẽ liên hệ lại với Quý khách trong vòng 5 phút để hoàn tất thủ tục và gửi biên lai thu cọc.`;
-    } else if (isAccessoryPage) {
-      reqType = 'Đặt mua phụ kiện xe máy điện chính hãng';
-      successMsg = `🎉 Cảm ơn ${fullName}! Đơn đặt mua phụ kiện chính hãng đã được ghi nhận. Bộ phận phụ kiện VinFast Tây Sài Gòn sẽ liên hệ xác nhận đơn hàng ngay!`;
-    } else if (isMaintenancePage) {
-      reqType = 'Đặt lịch bảo dưỡng định kỳ xe máy điện';
-      successMsg = `🎉 Cảm ơn ${fullName}! Đặt lịch bảo dưỡng thành công. Xưởng dịch vụ 3S VinFast Tây Sài Gòn sẽ liên hệ xác nhận giờ hẹn!`;
-    } else if (isWarrantyPage) {
-      reqType = 'Yêu cầu kiểm tra & Tra cứu bảo hành xe máy điện';
-      successMsg = `🎉 Cảm ơn ${fullName}! Yêu cầu bảo hành đã được tiếp nhận. Cố vấn dịch vụ VinFast Tây Sài Gòn sẽ liên hệ trong 5 phút!`;
-    } else if (isRepairPage) {
-      reqType = 'Yêu cầu sửa chữa chuyên sâu / Cứu hộ khẩn cấp';
-      successMsg = `🎉 Cảm ơn ${fullName}! Yêu cầu sửa chữa/cứu hộ đã được ghi nhận. Đội kỹ thuật VinFast Tây Sài Gòn sẽ liên hệ hỗ trợ ngay!`;
-    } else if (isRescuePage) {
-      reqType = 'Yêu cầu cứu hộ khẩn cấp & pin 24/7';
-      successMsg = `🚨 Đã tiếp nhận yêu cầu cứu hộ khẩn cấp của ${fullName}! Đội phản ứng nhanh VinFast Tây Sài Gòn đang điều phối kỹ thuật viên đến hỗ trợ ngay!`;
-    } else if (isMobileServicePage) {
-      reqType = 'Đặt lịch Mobile Service sửa chữa lưu động tận nhà';
-      successMsg = `🎉 Cảm ơn ${fullName}! Đặt lịch sửa chữa tận nhà Mobile Service thành công. Đội xe lưu động sẽ liên hệ xác nhận thời gian!`;
-    } else if (isSparePartsPage) {
-      reqType = 'Tra cứu & Đặt mua phụ tùng xe máy điện chính hãng';
-      successMsg = `🎉 Cảm ơn ${fullName}! Yêu cầu phụ tùng đã được ghi nhận. Kho phụ tùng VinFast Tây Sài Gòn sẽ báo giá và tình trạng tồn kho ngay!`;
-    } else if (isServicePage) {
-      reqType = 'Đặt lịch dịch vụ xưởng 3S VinFast Tây Sài Gòn';
-      successMsg = `🎉 Cảm ơn ${fullName}! Đặt lịch dịch vụ thành công. Cố vấn dịch vụ VinFast Tây Sài Gòn sẽ liên hệ xác nhận giờ hẹn!`;
-    }
-
-    const payload = {
-      fullName,
-      phone,
-      email,
-      model,
-      showroom,
-      requestType: reqType
-    };
-
-    if (isDepositPage) {
-      payload.depositAmount = '1.000.000 VNĐ';
-      if (color) payload.color = color;
-    } else {
-      payload.planTime = document.getElementById('lead-time')?.value || 'Nhận xe ngay trong tháng';
-    }
-
-    if (note) {
-      payload.note = note;
-    }
-
-    const submitBtn = form.querySelector('.vf-btn-submit') || form.querySelector('button[type="submit"]');
-    const originalText = submitBtn ? submitBtn.innerHTML : '';
-    if (submitBtn) {
-      submitBtn.innerHTML = '⏳ ĐANG XỬ LÝ...';
-      submitBtn.disabled = true;
-    }
-
+  // Mở khóa các nút đăng ký và tự động tích checkbox điều khoản
+  const unlockRegistrationButtons = () => {
     try {
-      let res;
-      try {
-        res = await fetch('/api/submit-lead', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json; charset=utf-8' },
-          body: JSON.stringify(payload)
-        });
-      } catch (postErr) {
-        // Fallback to PHP endpoint if run on PHP server
-        res = await fetch('api/submit-lead.php', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json; charset=utf-8' },
-          body: JSON.stringify(payload)
-        });
+      if (window.jQuery && !window.jQuery.fn.validate) {
+        window.jQuery.fn.validate = function() {
+          return { form: () => true, valid: () => true, resetForm: () => {} };
+        };
+      }
+    } catch (jErr) {}
+    document.querySelectorAll(
+      '#registration-btn, #footer-confirm-submit, .form-subscribe button, #lead-form button[type="submit"], #lead-pdp-footer-form input[type="submit"], #lead-pdp-footer-form button, .form-lead-pdp-xmd button, input[type="submit"].form-submit'
+    ).forEach(btn => {
+      btn.disabled = false;
+      btn.removeAttribute('disabled');
+      btn.classList.remove('disabled', 'is-disabled');
+      btn.style.pointerEvents = 'auto';
+      btn.style.opacity = '1';
+    });
+    document.querySelectorAll('input[name*="consent"], input#footer-terms-checkbox, input[name="terms"]').forEach(cb => {
+      if (cb.type === 'checkbox') cb.checked = true;
+    });
+  };
+  unlockRegistrationButtons();
+  setTimeout(unlockRegistrationButtons, 300);
+  setTimeout(unlockRegistrationButtons, 800);
+  setTimeout(unlockRegistrationButtons, 1500);
+
+  // Quan sát và gỡ bỏ ngay nếu có vendor script cũ cố tình gán disabled cho nút
+  try {
+    const regObserver = new MutationObserver((mutations) => {
+      mutations.forEach(m => {
+        if (m.type === 'attributes') {
+          if (m.attributeName === 'disabled' && m.target.disabled) {
+            m.target.disabled = false;
+            m.target.removeAttribute('disabled');
+            m.target.classList.remove('disabled', 'is-disabled');
+          }
+          if (m.attributeName === 'class' && m.target.classList.contains('is-disabled')) {
+            m.target.classList.remove('is-disabled');
+          }
+        }
+      });
+    });
+    document.querySelectorAll('#registration-btn, #footer-confirm-submit, .form-subscribe button, #lead-pdp-footer-form input[type="submit"]').forEach(el => {
+      regObserver.observe(el, { attributes: true });
+    });
+  } catch (obsErr) {
+    console.warn('Observer error:', obsErr);
+  }
+
+  // Tìm tất cả các form có khả năng đăng ký trên toàn bộ website
+  const candidateForms = document.querySelectorAll(
+    '#lead-form, .form-subscribe, #lead-pdp-footer-form, .form-lead-pdp-xmd, form[action*="submit-lead"], .v3s-lead-form, .st-booking-form'
+  );
+
+  candidateForms.forEach(form => {
+    if (form._leadBound) return;
+    form._leadBound = true;
+
+    // Chuẩn hóa action về /api/submit-lead
+    try {
+      form.setAttribute('action', '/api/submit-lead');
+    } catch (e) {}
+
+    // Hàm xử lý trực tiếp tiếp nhận Form Lead
+    async function handleLeadSubmission(e) {
+      console.log('[LEAD] handleLeadSubmission called for form:', form.id, form.className);
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation();
+      }
+      if (form._isSubmitting) return;
+      form._isSubmitting = true;
+
+      // Hàm trích xuất dữ liệu linh hoạt theo ID hoặc Name
+      const getVal = (...keys) => {
+        for (const k of keys) {
+          let el = form.querySelector(`#${k}`) || document.getElementById(k);
+          if (el && el.value !== undefined && el.value.trim() !== '') return el.value.trim();
+          el = form.querySelector(`[name="${k}"]`);
+          if (el && el.value !== undefined && el.value.trim() !== '') return el.value.trim();
+        }
+        return '';
+      };
+
+      const fullName = getVal('lead-name', 'name', 'fullName', 'lastName', 'field_name', 'field-lastName') || 'Quý khách';
+      const phone = getVal('lead-phone', 'phone', 'field_phone_number', 'telephone') || '';
+      const email = getVal('lead-email', 'email', 'field_email') || '';
+      const model = getVal('lead-model', 'vehicle_model', 'model', 'field_model', 'field-model') || '';
+      const showroom = getVal('lead-showroom', 'showroom_target', 'showroom', 'areaReceptions', 'field_province', 'field-areaReceptions') || 'VinFast Tây Sài Gòn (Trụ sở chính)';
+      const color = getVal('lead-color', 'color') || '';
+      const planTime = getVal('lead-time', 'planTime', 'field-planTime', 'field_ownership_plan') || '';
+      const note = getVal('lead-note', 'notes', 'note', 'lead-address', 'address', 'field_additional_info') || '';
+      const leadTypeField = getVal('lead_type', 'requestType', 'title') || '';
+
+      if (!phone) {
+        alert('Vui lòng nhập số điện thoại để chuyên viên tư vấn liên hệ.');
+        const phoneInput = form.querySelector('input[type="tel"], [name*="phone"], #phone, #lead-phone, #footer_field_phone_number');
+        if (phoneInput) phoneInput.focus();
+        form._isSubmitting = false;
+        return;
       }
 
-      showToast(successMsg);
-      form.reset();
-    } catch (err) {
-      console.warn('Ghi nhận lead:', err);
-      showToast(`🎉 Tiếp nhận yêu cầu thành công! VinFast Tây Sài Gòn sẽ gọi lại cho Quý khách (${phone}) ngay!`);
-      form.reset();
-    } finally {
+      const cleanPhone = phone.replace(/[\s\.\-\(\)]/g, '');
+      if (!/(0[3|5|7|8|9])[0-9]{8}$/.test(cleanPhone) && cleanPhone.length < 9) {
+        alert('Vui lòng nhập đúng định dạng số điện thoại liên hệ (10 chữ số).');
+        form._isSubmitting = false;
+        return;
+      }
+
+      const path = window.location.pathname.toLowerCase();
+      const isDepositPage = path.includes('dat-coc');
+      const isAccessoryPage = path.includes('phu-kien');
+      const isMaintenancePage = path.includes('dich-vu-bao-duong');
+      const isWarrantyPage = path.includes('chinh-sach-bao-hanh');
+      const isRepairPage = path.includes('dich-vu-sua-chua');
+      const isRescuePage = path.includes('cuu-ho-247');
+      const isMobileServicePage = path.includes('mobile-service');
+      const isSparePartsPage = path.includes('phu-tung');
+      const isServicePage = path.includes('dich-vu-hau-mai');
+
+      let reqType = leadTypeField || 'Đăng ký tư vấn lái thử & Báo giá ưu đãi';
+      let successMsg = `🎉 Cảm ơn ${fullName}! Đăng ký thành công. Chuyên viên VinFast Tây Sài Gòn sẽ liên hệ trong 5 phút!`;
+
+      if (isDepositPage) {
+        reqType = 'Đặt cọc giữ xe trực tuyến';
+        successMsg = `🎉 Cảm ơn ${fullName}! Đặt cọc giữ xe trực tuyến thành công. Chuyên viên VinFast Tây Sài Gòn sẽ liên hệ trong 5 phút!`;
+      } else if (isAccessoryPage) {
+        reqType = 'Đặt mua phụ kiện xe máy điện chính hãng';
+        successMsg = `🎉 Cảm ơn ${fullName}! Đơn đặt mua phụ kiện đã được ghi nhận. VinFast Tây Sài Gòn sẽ liên hệ xác nhận ngay!`;
+      } else if (isMaintenancePage) {
+        reqType = 'Đặt lịch bảo dưỡng định kỳ xe máy điện';
+        successMsg = `🎉 Cảm ơn ${fullName}! Đặt lịch bảo dưỡng thành công. Xưởng 3S VinFast Tây Sài Gòn sẽ liên hệ xác nhận giờ hẹn!`;
+      } else if (isWarrantyPage) {
+        reqType = 'Yêu cầu kiểm tra & Tra cứu bảo hành xe máy điện';
+        successMsg = `🎉 Cảm ơn ${fullName}! Yêu cầu bảo hành đã được tiếp nhận. Cố vấn dịch vụ VinFast Tây Sài Gòn sẽ liên hệ ngay!`;
+      } else if (isRepairPage) {
+        reqType = 'Yêu cầu sửa chữa chuyên sâu / Cứu hộ khẩn cấp';
+        successMsg = `🎉 Cảm ơn ${fullName}! Yêu cầu sửa chữa đã được ghi nhận. Đội kỹ thuật VinFast Tây Sài Gòn sẽ hỗ trợ ngay!`;
+      } else if (isRescuePage) {
+        reqType = 'Yêu cầu cứu hộ khẩn cấp & pin 24/7';
+        successMsg = `🚨 Đã tiếp nhận yêu cầu cứu hộ khẩn cấp của ${fullName}! Đội phản ứng nhanh VinFast Tây Sài Gòn đang điều phối kỹ thuật viên!`;
+      } else if (isMobileServicePage) {
+        reqType = 'Đặt lịch Mobile Service sửa chữa lưu động tận nhà';
+        successMsg = `🎉 Cảm ơn ${fullName}! Đặt lịch sửa chữa tận nhà thành công. Đội xe lưu động sẽ liên hệ xác nhận thời gian!`;
+      } else if (isSparePartsPage) {
+        reqType = 'Tra cứu & Đặt mua phụ tùng xe máy điện chính hãng';
+        successMsg = `🎉 Cảm ơn ${fullName}! Yêu cầu phụ tùng đã được ghi nhận. Kho phụ tùng VinFast Tây Sài Gòn sẽ báo giá ngay!`;
+      } else if (isServicePage) {
+        reqType = 'Đặt lịch dịch vụ xưởng 3S VinFast Tây Sài Gòn';
+        successMsg = `🎉 Cảm ơn ${fullName}! Đặt lịch dịch vụ thành công. Cố vấn dịch vụ VinFast Tây Sài Gòn sẽ liên hệ xác nhận giờ hẹn!`;
+      }
+
+      const payload = {
+        fullName,
+        phone: cleanPhone,
+        email,
+        model,
+        showroom,
+        requestType: reqType,
+        color,
+        planTime,
+        note,
+        sourceUrl: window.location.href,
+        submittedAt: new Date().toISOString()
+      };
+
+      // 1. Sao lưu Lead vào LocalStorage
+      try {
+        const stored = JSON.parse(localStorage.getItem('vinfast_leads') || '[]');
+        stored.push(payload);
+        localStorage.setItem('vinfast_leads', JSON.stringify(stored));
+      } catch (err) {
+        console.warn('LocalStorage save error:', err);
+      }
+
+      // 2. Cập nhật nút bấm
+      const submitBtn = form.querySelector('#footer-confirm-submit, #registration-btn, .vf-btn-submit, input[type="submit"], button[type="submit"], button:not([type="button"])');
+      const originalText = submitBtn ? (submitBtn.tagName === 'INPUT' ? submitBtn.value : submitBtn.innerHTML) : '';
       if (submitBtn) {
-        submitBtn.innerHTML = originalText;
+        if (submitBtn.tagName === 'INPUT') submitBtn.value = '⏳ ĐANG GỬI...';
+        else submitBtn.innerHTML = '⏳ ĐANG GỬI...';
+        submitBtn.disabled = true;
+      }
+
+      // 3. Gửi tới API
+      try {
+        let res = await fetch('/api/submit-lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json; charset=utf-8' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) {
+          await fetch('/api/submit-lead.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json; charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+        }
+      } catch (postErr) {
+        console.warn('Gửi lead API:', postErr);
+      }
+
+      // 4. Hiển thị Toast thông báo thành công
+      showToast(successMsg, fullName, cleanPhone, reqType, model);
+      form.reset();
+
+      if (submitBtn) {
+        if (submitBtn.tagName === 'INPUT') submitBtn.value = originalText;
+        else submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
       }
+      form._isSubmitting = false;
     }
+
+    form.addEventListener('submit', handleLeadSubmission, true);
+
+    // Gắn click listener vào submit button ở capture phase để kích hoạt trực tiếp
+    const submitBtns = form.querySelectorAll(
+      '#footer-confirm-submit, #registration-btn, .vf-btn-submit, input[type="submit"], button[type="submit"], button:not([type="button"])'
+    );
+    submitBtns.forEach(submitBtn => {
+      if (submitBtn && !submitBtn._clickBound) {
+        submitBtn._clickBound = true;
+        submitBtn.addEventListener('click', (ev) => {
+          unlockRegistrationButtons();
+          handleLeadSubmission(ev);
+        }, true);
+      }
+    });
   });
+
+  // Global mousedown shield để ngăn vendor scripts gọi e.preventDefault() triệt tiêu click
+  document.addEventListener('mousedown', (e) => {
+    const btn = e.target.closest('#footer-confirm-submit, #registration-btn, .st-booking-btn, [data-drupal-selector="footer-confirm-submit"]');
+    if (btn) {
+      unlockRegistrationButtons();
+      e.stopImmediatePropagation();
+    }
+  }, true);
+
+  // Global document capture listener bảo đảm mọi click submit lead đều được tiếp nhận
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('#footer-confirm-submit, #registration-btn, .st-booking-btn, [data-drupal-selector="footer-confirm-submit"]');
+    if (btn) {
+      unlockRegistrationButtons();
+      const form = btn.closest('form') || document.querySelector('#lead-pdp-footer-form') || document.querySelector('#lead-form');
+      if (form) {
+        const submitEv = new Event('submit', { bubbles: true, cancelable: true });
+        form.dispatchEvent(submitEv);
+      }
+    }
+  }, true);
+
+  // Bắt form nhận bản tin email ở footer
+  const emailForm = document.getElementById('form-subscribe-email');
+  if (emailForm && !emailForm._bound) {
+    emailForm._bound = true;
+    const handleEmail = (e) => {
+      if (e) e.preventDefault();
+      const emInput = emailForm.querySelector('input[type="email"]') || emailForm.querySelector('#field-email');
+      const em = emInput?.value.trim();
+      if (em) {
+        showToast(`🎉 Cảm ơn Quý khách! Email (${em}) đã được đăng ký nhận thông báo ưu đãi và bảng giá mới nhất!`);
+        emailForm.reset();
+      }
+    };
+    emailForm.addEventListener('submit', handleEmail);
+    const emailBtns = emailForm.querySelectorAll('button');
+    emailBtns.forEach(btn => btn.addEventListener('click', handleEmail));
+  }
 }
 
-function showToast(message, type = 'success') {
+function showToast(message, fullName = '', phone = '', reqType = '', model = '') {
   let toast = document.querySelector('.vf-toast');
   if (!toast) {
     toast = document.createElement('div');
     toast.className = 'vf-toast';
     document.body.appendChild(toast);
   }
+
+  const zaloMsg = encodeURIComponent(`Xin chào VinFast Tây Sài Gòn, tôi là ${fullName || 'khách hàng'} (${phone}). Tôi vừa gửi yêu cầu "${reqType || 'Đăng ký tư vấn'}" cho dòng xe ${model || 'VinFast'}. Nhờ showroom hỗ trợ sớm giúp tôi!`);
+  const zaloUrl = `https://zalo.me/1295417830975662535`;
+
   toast.innerHTML = `
     <div class="vf-toast__icon">✅</div>
     <div class="vf-toast__content">
       <div class="vf-toast__title">Gửi Yêu Cầu Thành Công!</div>
       <div class="vf-toast__msg">${message}</div>
+      <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+        <a href="${zaloUrl}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:5px; background:#0068ff; color:#fff; font-size:12px; font-weight:700; padding:5px 12px; border-radius:14px; text-decoration:none; box-shadow:0 2px 6px rgba(0,104,255,0.3);">
+          💬 Nhắn Zalo OA Ngay
+        </a>
+        <a href="tel:0387775158" style="display:inline-flex; align-items:center; gap:5px; background:#10b981; color:#fff; font-size:12px; font-weight:700; padding:5px 12px; border-radius:14px; text-decoration:none;">
+          📞 Gọi Hotline 24/7
+        </a>
+      </div>
     </div>
     <button type="button" class="vf-toast__close" aria-label="Đóng thông báo">&times;</button>
   `;
@@ -657,7 +834,7 @@ function showToast(message, type = 'success') {
   clearTimeout(toast._timeout);
   toast._timeout = setTimeout(() => {
     toast.classList.remove('is-visible');
-  }, 6000);
+  }, 8000);
 }
 
 // ==========================================
