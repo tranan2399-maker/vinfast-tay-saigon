@@ -1,6 +1,6 @@
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // Set CORS headers
-  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
   res.setHeader(
@@ -23,7 +23,6 @@ export default async function handler(req, res) {
       try {
         leadData = JSON.parse(leadData);
       } catch (e) {
-        // Fallback for form-encoded string
         leadData = Object.fromEntries(new URLSearchParams(leadData));
       }
     }
@@ -62,4 +61,4 @@ export default async function handler(req, res) {
     console.error('Error handling lead submission:', err);
     return res.status(500).json({ success: false, error: 'Lỗi máy chủ nội bộ' });
   }
-}
+};
