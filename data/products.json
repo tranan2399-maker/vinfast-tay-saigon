@@ -58,32 +58,32 @@
     "price_number": 35000000,
     "deposit": "2.000.000 VNĐ",
     "badge": "Đổi Pin Nhanh",
-    "thumbnail": "/assets/images/cars/highres/viper-den-bong.png",
-    "thumbnail_local": "/assets/images/cars/highres/viper-den-bong.png",
+    "thumbnail": "/assets/images/cars/highres/viper-den-bong.webp",
+    "thumbnail_local": "/assets/images/cars/highres/viper-den-bong.webp",
     "colors": [
       {
         "name": "Đen Bóng",
         "code": "#17202A",
-        "img": "/assets/images/cars/highres/viper-den-bong.png",
-        "img_local": "/assets/images/cars/highres/viper-den-bong.png"
+        "img": "/assets/images/cars/highres/viper-den-bong.webp",
+        "img_local": "/assets/images/cars/highres/viper-den-bong.webp"
       },
       {
         "name": "Trắng Ngọc Trai",
         "code": "#FFFFFF",
-        "img": "/assets/images/cars/highres/viper-trang-ngoc-trai.png",
-        "img_local": "/assets/images/cars/highres/viper-trang-ngoc-trai.png"
+        "img": "/assets/images/cars/highres/viper-trang-ngoc-trai.webp",
+        "img_local": "/assets/images/cars/highres/viper-trang-ngoc-trai.webp"
       },
       {
         "name": "Đỏ Tươi",
         "code": "#C0392B",
-        "img": "/assets/images/cars/highres/viper-do-tuoi.png",
-        "img_local": "/assets/images/cars/highres/viper-do-tuoi.png"
+        "img": "/assets/images/cars/highres/viper-do-tuoi.webp",
+        "img_local": "/assets/images/cars/highres/viper-do-tuoi.webp"
       },
       {
         "name": "Xám Khói Kim Loại",
         "code": "#707B7C",
-        "img": "/assets/images/cars/highres/viper-xam.png",
-        "img_local": "/assets/images/cars/highres/viper-xam.png"
+        "img": "/assets/images/cars/highres/viper-xam.webp",
+        "img_local": "/assets/images/cars/highres/viper-xam.webp"
       }
     ],
     "specs": {
@@ -106,38 +106,38 @@
     "price_number": 18800000,
     "deposit": "2.000.000 VNĐ",
     "badge": "Quốc Dân Bán Chạy",
-    "thumbnail": "/assets/images/cars/highres/evo200-trang-ngoc-trai.png",
-    "thumbnail_local": "/assets/images/cars/highres/evo200-trang-ngoc-trai.png",
+    "thumbnail": "/assets/images/cars/highres/evo200-trang-ngoc-trai.webp",
+    "thumbnail_local": "/assets/images/cars/highres/evo200-trang-ngoc-trai.webp",
     "colors": [
       {
         "name": "Trắng Ngọc Trai",
         "code": "#F8F9F9",
-        "img": "/assets/images/cars/highres/evo200-trang-ngoc-trai.png",
-        "img_local": "/assets/images/cars/highres/evo200-trang-ngoc-trai.png"
+        "img": "/assets/images/cars/highres/evo200-trang-ngoc-trai.webp",
+        "img_local": "/assets/images/cars/highres/evo200-trang-ngoc-trai.webp"
       },
       {
         "name": "Đen Nhám",
         "code": "#212F3D",
-        "img": "/assets/images/cars/highres/evo200-den-nham.png",
-        "img_local": "/assets/images/cars/highres/evo200-den-nham.png"
+        "img": "/assets/images/cars/highres/evo200-den-nham.webp",
+        "img_local": "/assets/images/cars/highres/evo200-den-nham.webp"
       },
       {
         "name": "Đỏ Tươi",
         "code": "#E74C3C",
-        "img": "/assets/images/cars/highres/evo200-do-tuoi.png",
-        "img_local": "/assets/images/cars/highres/evo200-do-tuoi.png"
+        "img": "/assets/images/cars/highres/evo200-do-tuoi.webp",
+        "img_local": "/assets/images/cars/highres/evo200-do-tuoi.webp"
       },
       {
         "name": "Xanh Tím Than",
         "code": "#1B4F72",
-        "img": "/assets/images/cars/highres/evo200-xanh-tim-than.png",
-        "img_local": "/assets/images/cars/highres/evo200-xanh-tim-than.png"
+        "img": "/assets/images/cars/highres/evo200-xanh-tim-than.webp",
+        "img_local": "/assets/images/cars/highres/evo200-xanh-tim-than.webp"
       },
       {
         "name": "Vàng Năng Động",
         "code": "#F1C40F",
-        "img": "/assets/images/cars/highres/evo200-vang.png",
-        "img_local": "/assets/images/cars/highres/evo200-vang.png"
+        "img": "/assets/images/cars/highres/evo200-vang.webp",
+        "img_local": "/assets/images/cars/highres/evo200-vang.webp"
       }
     ],
     "specs": {
@@ -161,26 +161,26 @@
     "price_number": 14300000,
     "deposit": "2.000.000 VNĐ",
     "badge": "Không Cần Bằng Lái",
-    "thumbnail": "/assets/images/cars/highres/evo200-lite-trang.png",
-    "thumbnail_local": "/assets/images/cars/highres/evo200-lite-trang.png",
+    "thumbnail": "/assets/images/cars/highres/evo200-lite-trang.webp",
+    "thumbnail_local": "/assets/images/cars/highres/evo200-lite-trang.webp",
     "colors": [
       {
         "name": "Trắng Ngọc Trai",
         "code": "#FFFFFF",
-        "img": "/assets/images/cars/highres/evo200-lite-trang.png",
-        "img_local": "/assets/images/cars/highres/evo200-lite-trang.png"
+        "img": "/assets/images/cars/highres/evo200-lite-trang.webp",
+        "img_local": "/assets/images/cars/highres/evo200-lite-trang.webp"
       },
       {
         "name": "Đỏ Thể Thao",
         "code": "#C0392B",
-        "img": "/assets/images/cars/highres/evo200-lite-do.png",
-        "img_local": "/assets/images/cars/highres/evo200-lite-do.png"
+        "img": "/assets/images/cars/highres/evo200-lite-do.webp",
+        "img_local": "/assets/images/cars/highres/evo200-lite-do.webp"
       },
       {
         "name": "Xanh Tím Than",
         "code": "#1B4F72",
-        "img": "/assets/images/cars/highres/evo200-lite-xanh.png",
-        "img_local": "/assets/images/cars/highres/evo200-lite-xanh.png"
+        "img": "/assets/images/cars/highres/evo200-lite-xanh.webp",
+        "img_local": "/assets/images/cars/highres/evo200-lite-xanh.webp"
       }
     ],
     "specs": {
@@ -203,32 +203,32 @@
     "price_number": 26000000,
     "deposit": "2.000.000 VNĐ",
     "badge": "Cốp Rộng 25L",
-    "thumbnail": "/assets/images/cars/highres/feliz-s-trang.png",
-    "thumbnail_local": "/assets/images/cars/highres/feliz-s-trang.png",
+    "thumbnail": "/assets/images/cars/highres/feliz-s-trang.webp",
+    "thumbnail_local": "/assets/images/cars/highres/feliz-s-trang.webp",
     "colors": [
       {
         "name": "Trắng Ngọc Trai",
         "code": "#FDFEFE",
-        "img": "/assets/images/cars/highres/feliz-s-trang.png",
-        "img_local": "/assets/images/cars/highres/feliz-s-trang.png"
+        "img": "/assets/images/cars/highres/feliz-s-trang.webp",
+        "img_local": "/assets/images/cars/highres/feliz-s-trang.webp"
       },
       {
         "name": "Bạc Ánh Kim",
         "code": "#BDC3C7",
-        "img": "/assets/images/cars/highres/feliz-s-bac-anh-kim.png",
-        "img_local": "/assets/images/cars/highres/feliz-s-bac-anh-kim.png"
+        "img": "/assets/images/cars/highres/feliz-s-bac-anh-kim.webp",
+        "img_local": "/assets/images/cars/highres/feliz-s-bac-anh-kim.webp"
       },
       {
         "name": "Đen Bóng",
         "code": "#1B2631",
-        "img": "/assets/images/cars/highres/feliz-s-den-bong.png",
-        "img_local": "/assets/images/cars/highres/feliz-s-den-bong.png"
+        "img": "/assets/images/cars/highres/feliz-s-den-bong.webp",
+        "img_local": "/assets/images/cars/highres/feliz-s-den-bong.webp"
       },
       {
         "name": "Xanh Rêu",
         "code": "#196F3D",
-        "img": "/assets/images/cars/highres/feliz-s-xanh-reu.png",
-        "img_local": "/assets/images/cars/highres/feliz-s-xanh-reu.png"
+        "img": "/assets/images/cars/highres/feliz-s-xanh-reu.webp",
+        "img_local": "/assets/images/cars/highres/feliz-s-xanh-reu.webp"
       }
     ],
     "specs": {
@@ -299,26 +299,26 @@
     "price_number": 63000000,
     "deposit": "2.000.000 VNĐ",
     "badge": "Đỉnh Cao Tốc Độ",
-    "thumbnail": "/assets/images/cars/highres/theon-s-den-nham.png",
-    "thumbnail_local": "/assets/images/cars/highres/theon-s-den-nham.png",
+    "thumbnail": "/assets/images/cars/highres/theon-s-den-nham.webp",
+    "thumbnail_local": "/assets/images/cars/highres/theon-s-den-nham.webp",
     "colors": [
       {
         "name": "Đen Nhám Quyền Lực",
         "code": "#1C2833",
-        "img": "/assets/images/cars/highres/theon-s-den-nham.png",
-        "img_local": "/assets/images/cars/highres/theon-s-den-nham.png"
+        "img": "/assets/images/cars/highres/theon-s-den-nham.webp",
+        "img_local": "/assets/images/cars/highres/theon-s-den-nham.webp"
       },
       {
         "name": "Đỏ Mận Thể Thao",
         "code": "#78281F",
-        "img": "/assets/images/cars/highres/theon-s-do-man.png",
-        "img_local": "/assets/images/cars/highres/theon-s-do-man.png"
+        "img": "/assets/images/cars/highres/theon-s-do-man.webp",
+        "img_local": "/assets/images/cars/highres/theon-s-do-man.webp"
       },
       {
         "name": "Trắng Ngọc Trai",
         "code": "#FFFFFF",
-        "img": "/assets/images/cars/highres/theon-s-trang.png",
-        "img_local": "/assets/images/cars/highres/theon-s-trang.png"
+        "img": "/assets/images/cars/highres/theon-s-trang.webp",
+        "img_local": "/assets/images/cars/highres/theon-s-trang.webp"
       }
     ],
     "specs": {
@@ -341,38 +341,38 @@
     "price_number": 50000000,
     "deposit": "2.000.000 VNĐ",
     "badge": "Side-Motor Đặt Cạnh",
-    "thumbnail": "/assets/images/cars/highres/vento-s-vang.png",
-    "thumbnail_local": "/assets/images/cars/highres/vento-s-vang.png",
+    "thumbnail": "/assets/images/cars/highres/vento-s-vang.webp",
+    "thumbnail_local": "/assets/images/cars/highres/vento-s-vang.webp",
     "colors": [
       {
         "name": "Vàng Thời Thượng",
         "code": "#F39C12",
-        "img": "/assets/images/cars/highres/vento-s-vang.png",
-        "img_local": "/assets/images/cars/highres/vento-s-vang.png"
+        "img": "/assets/images/cars/highres/vento-s-vang.webp",
+        "img_local": "/assets/images/cars/highres/vento-s-vang.webp"
       },
       {
         "name": "Cam Năng Động",
         "code": "#E67E22",
-        "img": "/assets/images/cars/highres/vento-s-cam.png",
-        "img_local": "/assets/images/cars/highres/vento-s-cam.png"
+        "img": "/assets/images/cars/highres/vento-s-cam.webp",
+        "img_local": "/assets/images/cars/highres/vento-s-cam.webp"
       },
       {
         "name": "Trắng Tinh Tế",
         "code": "#FFFFFF",
-        "img": "/assets/images/cars/highres/vento-s-trang.png",
-        "img_local": "/assets/images/cars/highres/vento-s-trang.png"
+        "img": "/assets/images/cars/highres/vento-s-trang.webp",
+        "img_local": "/assets/images/cars/highres/vento-s-trang.webp"
       },
       {
         "name": "Đỏ Năng Động",
         "code": "#C0392B",
-        "img": "/assets/images/cars/highres/vento-s-do.png",
-        "img_local": "/assets/images/cars/highres/vento-s-do.png"
+        "img": "/assets/images/cars/highres/vento-s-do.webp",
+        "img_local": "/assets/images/cars/highres/vento-s-do.webp"
       },
       {
         "name": "Đen Bóng",
         "code": "#1C2833",
-        "img": "/assets/images/cars/highres/vento-s-den-bong.png",
-        "img_local": "/assets/images/cars/highres/vento-s-den-bong.png"
+        "img": "/assets/images/cars/highres/vento-s-den-bong.webp",
+        "img_local": "/assets/images/cars/highres/vento-s-den-bong.webp"
       }
     ],
     "specs": {
@@ -395,32 +395,32 @@
     "price_number": 35000000,
     "deposit": "2.000.000 VNĐ",
     "badge": "Phong Cách Ý",
-    "thumbnail": "/assets/images/cars/highres/klara-s-trang.png",
-    "thumbnail_local": "/assets/images/cars/highres/klara-s-trang.png",
+    "thumbnail": "/assets/images/cars/highres/klara-s-trang.webp",
+    "thumbnail_local": "/assets/images/cars/highres/klara-s-trang.webp",
     "colors": [
       {
         "name": "Trắng Ngọc Trai",
         "code": "#FBFCFC",
-        "img": "/assets/images/cars/highres/klara-s-trang.png",
-        "img_local": "/assets/images/cars/highres/klara-s-trang.png"
+        "img": "/assets/images/cars/highres/klara-s-trang.webp",
+        "img_local": "/assets/images/cars/highres/klara-s-trang.webp"
       },
       {
         "name": "Xanh Đậm Quý Tộc",
         "code": "#1A5276",
-        "img": "/assets/images/cars/highres/klara-s-xanh-dam.png",
-        "img_local": "/assets/images/cars/highres/klara-s-xanh-dam.png"
+        "img": "/assets/images/cars/highres/klara-s-xanh-dam.webp",
+        "img_local": "/assets/images/cars/highres/klara-s-xanh-dam.webp"
       },
       {
         "name": "Đen Nhám",
         "code": "#2C3E50",
-        "img": "/assets/images/cars/highres/klara-s-den-nham.png",
-        "img_local": "/assets/images/cars/highres/klara-s-den-nham.png"
+        "img": "/assets/images/cars/highres/klara-s-den-nham.webp",
+        "img_local": "/assets/images/cars/highres/klara-s-den-nham.webp"
       },
       {
         "name": "Đỏ Quyến Rũ",
         "code": "#C0392B",
-        "img": "/assets/images/cars/highres/klara-s-do.png",
-        "img_local": "/assets/images/cars/highres/klara-s-do.png"
+        "img": "/assets/images/cars/highres/klara-s-do.webp",
+        "img_local": "/assets/images/cars/highres/klara-s-do.webp"
       }
     ],
     "specs": {
@@ -574,32 +574,32 @@
     "price_number": 11600000,
     "deposit": "2.000.000 VNĐ",
     "badge": "Giá Siêu Tiết Kiệm",
-    "thumbnail": "/assets/images/cars/highres/amio-s2-trang.png",
-    "thumbnail_local": "/assets/images/cars/highres/amio-s2-trang.png",
+    "thumbnail": "/assets/images/cars/highres/amio-s2-trang.webp",
+    "thumbnail_local": "/assets/images/cars/highres/amio-s2-trang.webp",
     "colors": [
       {
         "name": "Trắng Ngọc Trai",
         "code": "#FFFFFF",
-        "img": "/assets/images/cars/highres/amio-s2-trang.png",
-        "img_local": "/assets/images/cars/highres/amio-s2-trang.png"
+        "img": "/assets/images/cars/highres/amio-s2-trang.webp",
+        "img_local": "/assets/images/cars/highres/amio-s2-trang.webp"
       },
       {
         "name": "Xám Xi Măng",
         "code": "#95A5A6",
-        "img": "/assets/images/cars/highres/amio-s2-xam-xi-mang.png",
-        "img_local": "/assets/images/cars/highres/amio-s2-xam-xi-mang.png"
+        "img": "/assets/images/cars/highres/amio-s2-xam-xi-mang.webp",
+        "img_local": "/assets/images/cars/highres/amio-s2-xam-xi-mang.webp"
       },
       {
         "name": "Đỏ Tươi",
         "code": "#E74C3C",
-        "img": "/assets/images/cars/highres/amio-s2-do-tuoi.png",
-        "img_local": "/assets/images/cars/highres/amio-s2-do-tuoi.png"
+        "img": "/assets/images/cars/highres/amio-s2-do-tuoi.webp",
+        "img_local": "/assets/images/cars/highres/amio-s2-do-tuoi.webp"
       },
       {
         "name": "Đen Bóng",
         "code": "#17202A",
-        "img": "/assets/images/cars/highres/amio-s2-den-bong.png",
-        "img_local": "/assets/images/cars/highres/amio-s2-den-bong.png"
+        "img": "/assets/images/cars/highres/amio-s2-den-bong.webp",
+        "img_local": "/assets/images/cars/highres/amio-s2-den-bong.webp"
       }
     ],
     "specs": {
