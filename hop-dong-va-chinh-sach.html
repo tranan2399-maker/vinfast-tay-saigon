@@ -1,23 +1,151 @@
 <!DOCTYPE html>
-
 <html lang="vi">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Chính Sách Bảo Mật Thông Tin Khách Hàng | VinFast Tây Sài Gòn</title>
-<meta content="Chính sách đại lý chính hãng VinFast Tây Sài Gòn" name="description"/>
+<title>Hợp Đồng Và Chính Sách Mua Bán Xe Máy Điện | VinFast Tây Sài Gòn</title>
+<meta content="Tổng hợp các chính sách bán hàng, hợp đồng mua bán xe máy điện, quy định đặt cọc và bảo hành của CÔNG TY TNHH TÂY SÀI GÒN." name="description"/>
 <link href="/favicon.png" rel="icon"/>
-<!-- VinFast Authentic Stylesheets -->
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet"/>
 <link href="/_a/shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1792371615117/css/global.css" rel="stylesheet"/>
 <link href="/_a/shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1792371615117/css/vinfast/global.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,900&amp;display=swap" rel="stylesheet"/>
-<link href="/_a/shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1792371615117/css.min/slick.min.css" rel="stylesheet"/>
-<link href="/_a/shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1792371615117/css/pdp-page-xmd.css" rel="stylesheet"/>
-<link href="/_a/shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1792371615117/css/vinfast/all-xmdv2.css" rel="stylesheet"/>
 <link href="/assets/css/custom-showroom.css" rel="stylesheet"/>
-<meta property="og:site_name" content="VinFast Tây Sài Gòn"/>
-<meta property="og:image" content="https://vinfasttaysaigon.vercel.app/assets/images/logo/vinfast-tay-sai-gon-logo.webp"/>
-<meta property="og:locale" content="vi_VN"/>
+
+<style>
+.vf-policy-wrapper {
+  background: #f8fafc;
+  padding: 50px 0 80px;
+  font-family: 'Mulish', sans-serif;
+}
+.vf-policy-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.vf-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 35px;
+  justify-content: center;
+}
+.vf-filter-btn {
+  padding: 10px 24px;
+  border-radius: 30px;
+  border: 1.5px solid #cbd5e1;
+  background: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.vf-filter-btn.active, .vf-filter-btn:hover {
+  background: #1464f4;
+  color: #fff;
+  border-color: #1464f4;
+  box-shadow: 0 4px 15px rgba(20, 100, 244, 0.25);
+}
+
+.vf-policy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 991px) {
+  .vf-policy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .vf-policy-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.vf-policy-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  display: flex;
+  flex-column: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+.vf-policy-card:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+.vf-policy-tag {
+  display: inline-block;
+  background: #eff6ff;
+  color: #1464f4;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.vf-policy-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #002a6c;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+.vf-policy-desc {
+  font-size: 0.92rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+.vf-policy-footer {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.vf-policy-btn {
+  font-weight: 800;
+  font-size: 0.88rem;
+  color: #1464f4;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease;
+}
+.vf-policy-btn:hover {
+  gap: 10px;
+  color: #002a6c;
+}
+
+/* Featured Highlight Banner */
+.vf-highlight-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+  border-radius: 20px;
+  padding: 35px 40px;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .vf-highlight-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+}
+</style>
 </head>
 <body class="page v3s">
 <header class="v3s-header vf-xmd-header" id="header">
@@ -146,7 +274,7 @@
 </a>
 </div>
 <div class="col-auto">
-<a class="img" href="https://zalo.me/1295417830975662535">
+<a class="img" href="/xe-dap-dien-drgnfly.html">
 <img alt="Xe máy điện VinFast Tây Sài Gòn" class="img-mega-menu" data-src="/_a/shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd68b325a/images/mega-menu/scooter/Drgnfly.png" loading="lazy"/>
 <div class="item_name">VF DrgnFly eBike</div>
 </a>
@@ -381,7 +509,7 @@
 <li><a href="/xe-may-dien-vinfast-amio/">Amio</a></li>
 <li><a href="/xe-may-dien-vinfast-amio-s/">Amio S</a></li>
 <li><a href="/xe-may-dien-vinfast-amio-s.html">Amio S2</a></li>
-<li><a href="https://zalo.me/1295417830975662535">VF DrgnFly eBike</a></li>
+<li><a href="/xe-dap-dien-drgnfly.html">VF DrgnFly eBike</a></li>
 </ul>
 </li>
 <li>
@@ -514,60 +642,151 @@
 </div>
 </div>
 </header>
-<main class="page-content" style="min-height:600px; padding-bottom:50px;">
-<div style="background:linear-gradient(135deg, #091e42 0%, #002a6c 60%, #1464f4 100%); color:#fff; padding:65px 0 55px; text-align:center;">
-<div class="container" style="max-width:1200px; margin:0 auto; padding:0 20px;">
-<nav aria-label="Breadcrumb" class="v3s-breadcrumb-nav" style="margin-bottom:18px;">
-<ol style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap; list-style:none; padding:0; margin:0; font-size:0.875rem;">
-<li><a href="/" style="color:#93c5fd; text-decoration:none; font-weight:600;">Trang chủ</a></li>
-<li style="color:#64748b; margin:0 8px;">/</li>
-<li style="color:#cbd5e1; font-weight:600;">Chính sách đại lý</li><li style="color:#64748b; margin:0 8px;">/</li>
-<li aria-current="page" style="color:#ffffff; font-weight:800;">Hợp đồng & Chính sách bán hàng</li>
-</ol>
-</nav>
-<span style="display:inline-block; background:rgba(255,255,255,0.15); padding:6px 16px; border-radius:30px; font-size:0.85rem; font-weight:700; letter-spacing:1px; margin-bottom:12px; color:#93c5fd;">
-            HỢP ĐỒNG &amp; CHÍNH SÁCH
-          </span>
-<h1 style="font-size:2.8rem; font-weight:900; margin:0 0 12px; letter-spacing:-0.5px;">HỢP ĐỒNG VÀ CHÍNH SÁCH MUA XE MÁY ĐIỆN</h1>
-<p style="font-size:1.15rem; color:#cbd5e1; max-width:850px; margin:0 auto;">
-            Minh bạch quyền lợi, thủ tục giao xe và chính sách đồng hành của VinFast Tây Sài Gòn
+
+<main class="page-content" style="min-height:600px;">
+  <div style="background:linear-gradient(135deg, #091e42 0%, #002a6c 60%, #1464f4 100%); color:#fff; padding:65px 0 55px; text-align:center;">
+    <div class="container" style="max-width:1200px; margin:0 auto; padding:0 20px;">
+      <nav aria-label="Breadcrumb" class="v3s-breadcrumb-nav" style="margin-bottom:18px;">
+        <ol style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap; list-style:none; padding:0; margin:0; font-size:0.875rem;">
+          <li><a href="/" style="color:#93c5fd; text-decoration:none; font-weight:600;">Trang chủ</a></li>
+          <li style="color:#64748b; margin:0 8px;">/</li>
+          <li style="color:#cbd5e1; font-weight:600;">Chính sách đại lý</li>
+          <li style="color:#64748b; margin:0 8px;">/</li>
+          <li aria-current="page" style="color:#ffffff; font-weight:800;">Hợp đồng &amp; Chính sách</li>
+        </ol>
+      </nav>
+      <span style="display:inline-block; background:rgba(255,255,255,0.15); padding:6px 18px; border-radius:30px; font-size:0.85rem; font-weight:700; letter-spacing:1px; margin-bottom:12px; color:#93c5fd;">
+        HỢP ĐỒNG &amp; QUY ĐỊNH BÁN HÀNG
+      </span>
+      <h1 style="font-size:2.8rem; font-weight:900; margin:0 0 12px; letter-spacing:-0.5px;">CÁC CHÍNH SÁCH VÀ HỢP ĐỒNG MUA BÁN XE</h1>
+      <p style="font-size:1.15rem; color:#cbd5e1; max-width:850px; margin:0 auto;">
+        Cung cấp công khai, minh bạch các văn bản thỏa thuận đặt cọc, hợp đồng mua bán và quy trình bàn giao xe máy điện tại VinFast Tây Sài Gòn.
+      </p>
+    </div>
+  </div>
+
+  <section class="vf-policy-wrapper">
+    <div class="vf-policy-container">
+      
+      <!-- Highlight Banner -->
+      <div class="vf-highlight-banner">
+        <div>
+          <span style="color:#38bdf8; font-weight:800; font-size:0.85rem; letter-spacing:1px; text-transform:uppercase;">Cam Kết Độc Quyền Tây Sài Gòn</span>
+          <h2 style="font-size:1.8rem; font-weight:900; margin:8px 0 10px; color:#fff;">Ký Hợp Đồng &amp; Nhận Xe Tại Nhà Miễn Phí</h2>
+          <p style="margin:0; color:#cbd5e1; font-size:0.95rem; max-width:650px;">
+            Quý khách hàng không cần đến trực tiếp showroom. Chuyên viên VinFast Tây Sài Gòn sẽ mang hợp đồng chính hãng và xe máy điện kiểm tra xuất xưởng (PDI) đến tận cửa nhà Quý khách tại tất cả các quận huyện TP.HCM.
           </p>
-</div>
-</div>
-<section style="padding:60px 0; background:#f8fafc;">
-<div class="container" style="max-width:900px; margin:0 auto; padding:0 20px; line-height:1.8;">
-<div style="background:#fff; border-radius:16px; padding:40px; border:1px solid #e2e8f0; box-shadow:0 10px 25px rgba(0,0,0,0.05); margin-bottom:30px;">
-<h2 style="color:#002a6c; font-size:1.8rem; font-weight:800; margin-top:0;">1. Quy Trình Ký Kết Hợp Đồng Bán Hàng</h2>
-<p>Tại <strong>CÔNG TY TNHH TÂY SÀI GÒN</strong>, khách hàng mua xe máy điện VinFast có thể thực hiện giao kết hợp đồng bằng 2 hình thức thuận tiện:</p>
-<ul style="font-weight:600; padding-left:20px;">
-  <li style="margin-bottom:8px;"><strong>Ký hợp đồng trực tiếp:</strong> Tại Showroom Chi nhánh 1 (982 Tỉnh Lộ 10, Tân Tạo) hoặc Chi nhánh 2 (212 Nguyễn Thị Tú, Bình Hưng Hòa B).</li>
-  <li style="margin-bottom:8px;"><strong>Ký hợp đồng &amp; Giao nhận tại nhà:</strong> Chuyên viên VinFast Tây Sài Gòn mang hợp đồng cùng xe máy điện đến tận nhà khách hàng tại mọi quận huyện TP.HCM.</li>
-</ul>
+        </div>
+        <a href="https://zalo.me/1295417830975662535" target="_blank" style="background:#1464f4; color:#fff; padding:14px 28px; border-radius:12px; font-weight:800; text-decoration:none; white-space:nowrap; box-shadow:0 6px 20px rgba(20, 100, 244, 0.4);">
+          💬 Nhận Mẫu Hợp Đồng Zalo
+        </a>
+      </div>
 
-<h2 style="color:#002a6c; font-size:1.8rem; font-weight:800; margin-top:30px;">2. Chính Sách Đặt Cọc Giữ Xe &amp; Chọn Màu</h2>
-<p>Khách hàng có thể đặt cọc giữ xe và giữ ưu đãi giá tốt qua tài khoản chính thức của công ty. Tiền đặt cọc được khấu trừ trực tiếp vào giá trị xe khi ký hợp đồng và thanh toán đợt cuối.</p>
-<p>Xem chi tiết tại: <a href="/quy-dinh-dat-coc.html" style="color:#1464f4; font-weight:700;">Quy định đặt cọc VinFast Tây Sài Gòn</a>.</p>
+      <!-- Filters -->
+      <div class="vf-filter-pills">
+        <button class="vf-filter-btn active" onclick="filterPolicy('all')">Tất cả chính sách (6)</button>
+        <button class="vf-filter-btn" onclick="filterPolicy('sales')">Chính sách bán hàng</button>
+        <button class="vf-filter-btn" onclick="filterPolicy('contract')">Hợp đồng &amp; Đặt cọc</button>
+        <button class="vf-filter-btn" onclick="filterPolicy('warranty')">Bảo hành &amp; Giao nhận</button>
+      </div>
 
-<h2 style="color:#002a6c; font-size:1.8rem; font-weight:800; margin-top:30px;">3. Chính Sách Bàn Giao Xe &amp; Kích Hoạt Bảo Hành</h2>
-<p>Khi bàn giao xe máy điện VinFast, Quý khách sẽ nhận được đầy đủ:</p>
-<ul style="font-weight:600; padding-left:20px;">
-  <li style="margin-bottom:8px;">Biên bản bàn giao xe và phiếu kiểm tra xuất xưởng (PDI) tiêu chuẩn 3S.</li>
-  <li style="margin-bottom:8px;">Hóa đơn giá trị gia tăng (VAT) hợp lệ để thực hiện thủ tục đăng ký biển số.</li>
-  <li style="margin-bottom:8px;">Kích hoạt bảo hành điện tử chính hãng lên tới 5 năm hoặc 6 năm trên ứng dụng VinFast E-Scooter.</li>
-  <li style="margin-bottom:8px;">Bộ sạc pin tiêu chuẩn, 2 chìa khóa cơ / smartkey và quà tặng phụ kiện kèm theo.</li>
-</ul>
+      <!-- Policy Grid -->
+      <div class="vf-policy-grid">
+        <!-- Card 1 -->
+        <div class="vf-policy-card" data-cat="sales">
+          <div>
+            <span class="vf-policy-tag">BÁN HÀNG</span>
+            <h3 class="vf-policy-title">Chính Sách Giá Bán &amp; Ưu Đãi Xe Máy Điện Mới Nhất</h3>
+            <p class="vf-policy-desc">
+              Áp dụng chương trình hỗ trợ lệ phí trước bạ, tặng quà phụ kiện chính hãng và giảm giá trực tiếp cho khách hàng mua xe tại hệ thống 2 chi nhánh Xưởng 3S Bình Tân.
+            </p>
+          </div>
+          <div class="vf-policy-footer">
+            <span style="font-size:0.8rem; color:#94a3b8;">Cập nhật Tháng 11/2026</span>
+            <a href="/xe-may-dien.html" class="vf-policy-btn">Xem bảng giá &rarr;</a>
+          </div>
+        </div>
 
-<h2 style="color:#002a6c; font-size:1.8rem; font-weight:800; margin-top:30px;">4. Hỗ Trợ Khách Hàng</h2>
-<p>Liên hệ đường dây nóng của cửa hàng trưởng để được hỗ trợ thủ tục hợp đồng và đăng ký xe nhanh nhất:</p>
-<ul style="font-weight:600; padding-left:20px;">
-  <li style="margin-bottom:8px;">📞 Hotline CN1: <a href="tel:0387775158" style="color:#1464f4;">0387 775 158 (Mr. An - CHT)</a></li>
-  <li style="margin-bottom:8px;">📞 Hotline CN2: <a href="tel:0902076265" style="color:#1464f4;">0902 076 265 (Mr. Tuấn - CHT)</a></li>
-  <li style="margin-bottom:8px;">💬 Nhắn tin hỗ trợ qua Zalo: <a href="https://zalo.me/1295417830975662535" target="_blank" style="color:#1464f4;">Zalo OA VinFast Tây Sài Gòn</a></li>
-</ul>
-</div>
-</div>
-</section>
+        <!-- Card 2 -->
+        <div class="vf-policy-card" data-cat="contract">
+          <div>
+            <span class="vf-policy-tag">ĐẶT CỌC</span>
+            <h3 class="vf-policy-title">Quy Định Đặt Cọc &amp; Giữ Giá Khuyến Mãi</h3>
+            <p class="vf-policy-desc">
+              Mức đặt cọc tiêu chuẩn chỉ 1.000.000 VNĐ / xe. Tiền cọc được khấu trừ vào hợp đồng mua bán và cam kết hoàn 100% nếu khách hàng thay đổi kế hoạch trước khi đăng ký bấm biển.
+            </p>
+          </div>
+          <div class="vf-policy-footer">
+            <span style="font-size:0.8rem; color:#94a3b8;">Hiệu lực toàn quốc</span>
+            <a href="/quy-dinh-dat-coc.html" class="vf-policy-btn">Xem chi tiết &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="vf-policy-card" data-cat="contract">
+          <div>
+            <span class="vf-policy-tag">HỢP ĐỒNG</span>
+            <h3 class="vf-policy-title">Mẫu Hợp Đồng Mua Bán Xe Máy Điện VinFast</h3>
+            <p class="vf-policy-desc">
+              Văn bản pháp lý chính thức ký kết giữa CÔNG TY TNHH TÂY SÀI GÒN và bên mua. Ghi nhận rõ số khung số máy, nguồn gốc xuất xưởng Hải Phòng, hóa đơn VAT và bảo hành điện tử.
+            </p>
+          </div>
+          <div class="vf-policy-footer">
+            <span style="font-size:0.8rem; color:#94a3b8;">Mẫu chuẩn VinFast</span>
+            <a href="https://zalo.me/1295417830975662535" target="_blank" class="vf-policy-btn">Tải mẫu hợp đồng &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="vf-policy-card" data-cat="warranty">
+          <div>
+            <span class="vf-policy-tag">BẢO HÀNH</span>
+            <h3 class="vf-policy-title">Chính Sách Bảo Hành Chính Hãng Lên Tới 5–6 Năm</h3>
+            <p class="vf-policy-desc">
+              Quy định thời hạn và phạm vi bảo hành đối với động cơ điện, khung sườn, hệ thống điều khiển điện tử và pin LFP. Hỗ trợ cứu hộ khẩn cấp 24/7 và sửa chữa lưu động Mobile Service.
+            </p>
+          </div>
+          <div class="vf-policy-footer">
+            <span style="font-size:0.8rem; color:#94a3b8;">Chính hãng VinFast</span>
+            <a href="/chinh-sach-bao-hanh-xe-may-dien.html" class="vf-policy-btn">Xem sổ bảo hành &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="vf-policy-card" data-cat="warranty">
+          <div>
+            <span class="vf-policy-tag">GIAO NHẬN</span>
+            <h3 class="vf-policy-title">Chính Sách Vận Chuyển &amp; Bàn Giao Xe Tận Nhà</h3>
+            <p class="vf-policy-desc">
+              Miễn phí giao xe bằng xe tải chuyên dụng tới tận tay khách hàng tại tất cả các quận huyện thuộc TP.HCM. Bàn giao đầy đủ 2 chìa khóa/smartkey, phiếu PDI kiểm tra và bộ sạc.
+            </p>
+          </div>
+          <div class="vf-policy-footer">
+            <span style="font-size:0.8rem; color:#94a3b8;">Miễn phí TP.HCM</span>
+            <a href="/chinh-sach-giao-nhan-xe.html" class="vf-policy-btn">Quy trình giao &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="vf-policy-card" data-cat="sales">
+          <div>
+            <span class="vf-policy-tag">TRẢ GÓP</span>
+            <h3 class="vf-policy-title">Chính Sách Mua Xe Trả Góp Lãi Suất 0%</h3>
+            <p class="vf-policy-desc">
+              Liên kết các ngân hàng đối tác và công ty tài chính uy tín. Hỗ trợ vay đến 80% giá trị xe, thủ tục chỉ cần CCCD gắn chip, duyệt hồ sơ online trong 15 phút và nhận xe ngay.
+            </p>
+          </div>
+          <div class="vf-policy-footer">
+            <span style="font-size:0.8rem; color:#94a3b8;">Duyệt nhanh 15 phút</span>
+            <a href="/du-toan-chi-phi.html" class="vf-policy-btn">Dự toán khoản vay &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </main>
+
 <footer class="v3s-footer">
 <div class="v3s-footer-bottom row">
 <div class="col-12 col-lg-5">
@@ -799,20 +1018,22 @@
 </div>
 </div>
 </footer>
-<div class="vf-floating-contact">
-<a aria-label="Tư vấn Zalo" class="vf-floating-btn vf-floating-btn--zalo" href="https://zalo.me/1295417830975662535" rel="noopener" target="_blank" title="Tư vấn Zalo OA">
-<span class="zalo-text">Zalo</span>
-</a>
-<a aria-label="Gọi hotline 2 chi nhánh" class="vf-floating-btn vf-floating-btn--phone" href="javascript:void(0)" data-open-phone-modal="true" title="Hotline 2 chi nhánh: 0387 775 158 (CN1) - 0902 076 265 (CN2)">
-<svg fill="none" height="26" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="26">
-<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-</svg>
-</a>
-</div>
-<script src="/_a/shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1792371615117/js/main.js"></script>
-<script src="/_a/shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1792371615117/js.min/slick.min.js"></script>
-<script src="/_a/shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1792371615117/js/all-xmdv2.js"></script>
-<script src="/_a/shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1792371615117/js/commonUI.js"></script>
-<script src="/assets/js/custom-showroom.js"></script>
+
+<script>
+function filterPolicy(cat) {
+  const btns = document.querySelectorAll('.vf-filter-btn');
+  btns.forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+
+  const cards = document.querySelectorAll('.vf-policy-card');
+  cards.forEach(c => {
+    if (cat === 'all' || c.getAttribute('data-cat') === cat) {
+      c.style.display = 'flex';
+    } else {
+      c.style.display = 'none';
+    }
+  });
+}
+</script>
 </body>
 </html>
