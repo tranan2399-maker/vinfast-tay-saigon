@@ -713,18 +713,11 @@ function initLeadForm() {
 
       // 3. Gửi tới API
       try {
-        let res = await fetch('/api/submit-lead', {
+        await fetch('/api/submit-lead', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json; charset=utf-8' },
           body: JSON.stringify(payload)
         });
-        if (!res.ok) {
-          await fetch('/api/submit-lead.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json; charset=utf-8' },
-            body: JSON.stringify(payload)
-          });
-        }
       } catch (postErr) {
         console.warn('Gửi lead API:', postErr);
       }
