@@ -31,6 +31,11 @@ module.exports = async function handler(req, res) {
     const phone = (leadData.phone || leadData.field_phone_number || '').trim();
     const email = (leadData.email || leadData.field_email || '').trim();
     const model = (leadData.model || leadData.vehicle_model || leadData.field_model || 'Xe máy điện VinFast').trim();
+    const color = (leadData.color || '').trim();
+    const batteryOption = (leadData.batteryOption || '').trim();
+    const paymentMethod = (leadData.paymentMethod || leadData.purchaseType || '').trim();
+    const testDrive = (leadData.testDrive || '').trim();
+    const timeline = (leadData.timeline || '').trim();
     const showroom = (leadData.showroom || leadData.showroom_target || leadData.areaReceptions || leadData.field_province || 'VinFast Tây Sài Gòn').trim();
     const requestType = (leadData.requestType || leadData.lead_type || 'Đăng ký tư vấn & Báo giá').trim();
     const note = (leadData.note || leadData.notes || leadData.field_additional_info || '').trim();
@@ -44,6 +49,11 @@ module.exports = async function handler(req, res) {
       phone,
       email,
       model,
+      color,
+      batteryOption,
+      paymentMethod,
+      testDrive,
+      timeline,
       showroom,
       requestType,
       note,

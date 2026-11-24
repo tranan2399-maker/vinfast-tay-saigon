@@ -815,11 +815,11 @@
         </ol>
       </nav>
       <span style="display:inline-block; background:rgba(255,255,255,0.15); padding:6px 18px; border-radius:30px; font-size:0.85rem; font-weight:700; letter-spacing:1px; margin-bottom:10px; color:#93c5fd;">
-        ĐẶT MUA ONLINE - NHẬN XE TẠI TÂY SÀI GÒN
+        ĐĂNG KÝ TƯ VẤN &amp; BÁO GIÁ LĂN BÁNH - TÂY SÀI GÒN
       </span>
-      <h1 style="font-size:2.6rem; font-weight:900; margin:0 0 10px; letter-spacing:-0.5px;">ĐẶT MUA XE MÁY ĐIỆN VINFAST CHÍNH HÃNG</h1>
+      <h1 style="font-size:2.6rem; font-weight:900; margin:0 0 10px; letter-spacing:-0.5px;">CHỌN XE &amp; ĐĂNG KÝ TƯ VẤN CHÍNH HÃNG</h1>
       <p style="font-size:1.1rem; color:#cbd5e1; max-width:850px; margin:0 auto;">
-        Chọn xe yêu thích, giữ ngay khuyến mãi tháng và nhận xe tại 2 chi nhánh Xưởng 3S Bình Tân hoặc giao tận nhà miễn phí.
+        Chọn cấu hình xe yêu thích và gửi thông tin nhu cầu. Chuyên viên VinFast Tây Sài Gòn sẽ liên hệ báo giá lăn bánh, áp dụng ưu đãi đại lý và hỗ trợ giao xe tận nơi.
       </p>
     </div>
   </div>
@@ -833,11 +833,11 @@
       </div>
       <div class="vf-step-item" id="nav-step-2" onclick="goToStep(2)">
         <span class="step-number">2</span>
-        <span>Thông tin khách hàng &amp; Showroom</span>
+        <span>Thông tin &amp; Nhu cầu tư vấn</span>
       </div>
       <div class="vf-step-item" id="nav-step-3" onclick="goToStep(3)">
         <span class="step-number">3</span>
-        <span>Xác nhận đặt cọc &amp; Thanh toán</span>
+        <span>Xác nhận &amp; Báo giá lăn bánh</span>
       </div>
     </div>
 
@@ -917,110 +917,167 @@
               <strong style="color:#15803d;">Tặng mũ BH + Áo mưa + 1 năm cứu hộ 24/7</strong>
             </div>
             <div class="vf-bill-row total">
-              <span>Tổng giá trị xe:</span>
+              <span>Tổng giá trị xe niêm yết:</span>
               <strong id="bill-total-price">35.000.000 VNĐ</strong>
             </div>
-            <div class="vf-bill-row deposit">
-              <span>Số tiền đặt cọc giữ xe:</span>
-              <strong>1.000.000 VNĐ</strong>
+            <div class="vf-bill-row" style="background:#f0fdf4; border-radius:8px; padding:10px 14px; margin-top:10px; border:1px solid #bbf7d0;">
+              <span style="color:#15803d; font-weight:700;">🎁 Đặc quyền Tây Sài Gòn:</span>
+              <strong style="color:#166534;">Hỗ trợ trả góp 0% • Lái thử &amp; Giao xe tận nhà</strong>
             </div>
           </div>
 
           <div class="vf-action-btns">
             <button class="vf-btn-next" onclick="goToStep(2)">
-              TIẾP THEO: THÔNG TIN KHÁCH HÀNG &rarr;
+              TIẾP THEO: NHẬP THÔNG TIN TƯ VẤN &rarr;
             </button>
           </div>
         </div>
 
-        <!-- STEP 2: THÔNG TIN KHÁCH HÀNG & SHOWROOM NHẬN XE -->
+        <!-- STEP 2: THÔNG TIN KHÁCH HÀNG & NHU CẦU TƯ VẤN -->
         <div id="step-2-panel" style="display:none;">
-          <h3><span>1.</span> Thông Tin Chủ Sở Hữu Xe</h3>
+          <h3><span>1.</span> Thông Tin Người Nhận Tư Vấn</h3>
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
             <div>
               <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Họ và tên *</label>
-              <input type="text" class="vf-form-input" id="cust-name" placeholder="Nguyễn Văn A" required/>
+              <input type="text" class="vf-form-input" id="cust-name" placeholder="Ví dụ: Nguyễn Văn A" required/>
             </div>
             <div>
-              <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Số điện thoại *</label>
-              <input type="tel" class="vf-form-input" id="cust-phone" placeholder="0901 234 567" required/>
+              <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Số điện thoại liên hệ *</label>
+              <input type="tel" class="vf-form-input" id="cust-phone" placeholder="Ví dụ: 0901 234 567" required/>
             </div>
           </div>
 
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:14px;">
             <div>
-              <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Email nhận hóa đơn</label>
+              <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Email (không bắt buộc)</label>
               <input type="email" class="vf-form-input" id="cust-email" placeholder="email@gmail.com"/>
             </div>
             <div>
-              <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Số CCCD / Mã số thuế</label>
-              <input type="text" class="vf-form-input" id="cust-id" placeholder="Dùng xuất hóa đơn đăng ký biển số"/>
+              <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Hình thức mua dự kiến</label>
+              <select class="vf-form-input" id="cust-payment-method">
+                <option value="Trả góp 0% lãi suất">💳 Mua trả góp 0% lãi suất (Duyệt nhanh 15 phút)</option>
+                <option value="Trả thẳng 100%">💵 Trả thẳng 100% (Ưu đãi chiết khấu tối đa)</option>
+                <option value="Cần chuyên viên tư vấn thêm">💬 Cần chuyên viên tư vấn so sánh chi tiết</option>
+              </select>
             </div>
           </div>
 
-          <h3 style="margin-top:25px;"><span>2.</span> Địa Điểm Tiếp Nhận &amp; Bàn Giao Xe</h3>
-          <div style="margin-bottom:20px;">
-            <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Chọn điểm nhận xe thuận tiện:</label>
+          <h3 style="margin-top:25px;"><span>2.</span> Nhu Cầu Trải Nghiệm &amp; Bàn Giao Xe</h3>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+            <div>
+              <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Nhu cầu lái thử trải nghiệm:</label>
+              <select class="vf-form-input" id="cust-test-drive">
+                <option value="Đăng ký lái thử tận nhà miễn phí">🛵 Đăng ký lái thử tận nhà (Miễn phí)</option>
+                <option value="Lái thử tại showroom">🏢 Lái thử tại showroom Tây Sài Gòn</option>
+                <option value="Đã chọn xe, không cần lái thử">✅ Đã chọn được dòng xe, không cần lái thử</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Thời gian dự kiến nhận xe:</label>
+              <select class="vf-form-input" id="cust-timeline">
+                <option value="Lấy xe ngay trong tuần này">⚡ Trong tuần này</option>
+                <option value="Trong tháng này">📅 Trong tháng này</option>
+                <option value="Đang tham khảo chuẩn bị tài chính">🔍 Đang tham khảo dự toán chi phí</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="margin-top:16px; margin-bottom:20px;">
+            <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Điểm nhận tư vấn &amp; Bàn giao xe thuận tiện:</label>
             <select class="vf-form-input" id="select-showroom">
-              <option value="🏠 Giao xe tận nhà miễn phí (Toàn bộ khu vực TP.HCM)">🏠 Giao xe tận nhà miễn phí (Toàn bộ khu vực TP.HCM)</option>
+              <option value="🏠 Giao xe tận nhà miễn phí (Toàn bộ khu vực TP.HCM)">🏠 Giao xe &amp; làm thủ tục tận nhà miễn phí (Toàn bộ TP.HCM)</option>
               <option value="📍 Xưởng 3S Chi nhánh 1: 982 Tỉnh Lộ 10, P. Tân Tạo, Q. Bình Tân, TP.HCM">📍 Xưởng 3S Chi nhánh 1: 982 Tỉnh Lộ 10, P. Tân Tạo, Q. Bình Tân (Trụ sở chính)</option>
               <option value="📍 Xưởng 3S Chi nhánh 2: 212 Nguyễn Thị Tú, P. Bình Hưng Hòa B, Q. Bình Tân, TP.HCM">📍 Xưởng 3S Chi nhánh 2: 212 Nguyễn Thị Tú, P. Bình Hưng Hòa B, Q. Bình Tân</option>
             </select>
           </div>
 
           <div>
-            <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Ghi chú hoặc địa chỉ cụ thể nếu giao tận nhà:</label>
-            <textarea class="vf-form-input" id="cust-note" style="height:80px; padding:10px 16px;" placeholder="Ví dụ: Giao giờ hành chính, cần tư vấn thêm gói trả góp 0%..."></textarea>
+            <label style="font-weight:700; color:#334155; display:block; margin-bottom:6px;">Ghi chú hoặc yêu cầu cụ thể của Quý khách:</label>
+            <textarea class="vf-form-input" id="cust-note" style="height:70px; padding:10px 16px;" placeholder="Ví dụ: Giờ rảnh nghe điện thoại, câu hỏi về pin, ưu đãi..."></textarea>
           </div>
 
           <div class="vf-action-btns">
             <button class="vf-btn-back" onclick="goToStep(1)">&larr; QUAY LẠI</button>
             <button class="vf-btn-next" onclick="validateAndGoToStep3()">
-              TIẾP THEO: XÁC NHẬN ĐẶT CỌC &rarr;
+              TIẾP THEO: XÁC NHẬN YÊU CẦU &rarr;
             </button>
           </div>
         </div>
 
-        <!-- STEP 3: XÁC NHẬN ĐẶT CỌC & THANH TOÁN -->
+        <!-- STEP 3: XÁC NHẬN NHU CẦU & GỬI YÊU CẦU CHO CHUYÊN VIÊN -->
         <div id="step-3-panel" style="display:none;">
-          <h3><span>1.</span> Xác Nhận Đơn Hàng Đặt Mua</h3>
-          <div style="background:#f8fafc; border-radius:14px; padding:20px; border:1px solid #e2e8f0; margin-bottom:25px;">
-            <div class="vf-bill-row"><span>Dòng xe:</span> <strong id="confirm-model-name">VinFast Viper</strong></div>
-            <div class="vf-bill-row"><span>Màu sơn:</span> <strong id="confirm-color-name">Đen Nhám</strong></div>
-            <div class="vf-bill-row"><span>Gói pin:</span> <strong id="confirm-battery-type">Thuê Pin</strong></div>
-            <div class="vf-bill-row"><span>Chủ sở hữu:</span> <strong id="confirm-cust-name">-</strong></div>
-            <div class="vf-bill-row"><span>Số điện thoại:</span> <strong id="confirm-cust-phone">-</strong></div>
-            <div class="vf-bill-row"><span>Địa điểm nhận xe:</span> <strong id="confirm-showroom-name">-</strong></div>
-            <div class="vf-bill-row total">
-              <span>Tổng tiền cọc giữ xe:</span>
-              <span style="color:#1464f4;">1.000.000 VNĐ</span>
+          <div id="order-confirm-section">
+            <h3><span>1.</span> Xác Nhận Cấu Hình Xe &amp; Nhu Cầu</h3>
+            <div style="background:#f8fafc; border-radius:14px; padding:20px; border:1px solid #e2e8f0; margin-bottom:20px;">
+              <div class="vf-bill-row"><span>Dòng xe quan tâm:</span> <strong id="confirm-model-name">VinFast Viper</strong></div>
+              <div class="vf-bill-row"><span>Màu sắc lựa chọn:</span> <strong id="confirm-color-name">Đen Nhám</strong></div>
+              <div class="vf-bill-row"><span>Gói pin lựa chọn:</span> <strong id="confirm-battery-type">Thuê Pin</strong></div>
+              <div class="vf-bill-row"><span>Người nhận tư vấn:</span> <strong id="confirm-cust-name">-</strong></div>
+              <div class="vf-bill-row"><span>Số điện thoại:</span> <strong id="confirm-cust-phone" style="color:#1464f4;">-</strong></div>
+              <div class="vf-bill-row"><span>Hình thức thanh toán:</span> <strong id="confirm-payment-method">Trả góp 0%</strong></div>
+              <div class="vf-bill-row"><span>Nhu cầu lái thử:</span> <strong id="confirm-test-drive">Lái thử tại nhà</strong></div>
+              <div class="vf-bill-row"><span>Thời gian dự kiến:</span> <strong id="confirm-timeline">Trong tuần này</strong></div>
+              <div class="vf-bill-row"><span>Điểm tư vấn / bàn giao:</span> <strong id="confirm-showroom-name">-</strong></div>
+            </div>
+
+            <h3><span>2.</span> Cam Kết Hỗ Trợ Từ VinFast Tây Sài Gòn</h3>
+            <div style="background:#eff6ff; border:1.5px solid #bfdbfe; border-radius:14px; padding:20px; margin-bottom:20px;">
+              <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+                <span style="font-size:2rem;">🤝</span>
+                <div>
+                  <div style="font-weight:800; color:#002a6c; font-size:1.05rem;">Chuyên viên hỗ trợ trực tiếp từ Cửa hàng trưởng</div>
+                  <div style="font-size:0.875rem; color:#475569;">Thông tin của Quý khách sẽ được gửi trực tiếp tới đội ngũ bán hàng VinFast Tây Sài Gòn.</div>
+                </div>
+              </div>
+              <ul style="margin:0; padding-left:20px; font-size:0.9rem; color:#1e3a8a; line-height:1.7;">
+                <li>📞 <strong>Liên hệ trong vòng 5 - 15 phút:</strong> Báo giá lăn bánh chính xác và bảng tính chi tiết.</li>
+                <li>💳 <strong>Thủ tục trả góp 0% duyệt siêu nhanh:</strong> Chỉ cần CCCD gắn chip, giải ngân nhanh chóng.</li>
+                <li>🚚 <strong>Hỗ trợ giao xe tận nhà:</strong> Kỹ thuật viên bàn giao, hướng dẫn sử dụng và kích hoạt bảo hành tận nơi.</li>
+              </ul>
+            </div>
+
+            <div style="margin-bottom:25px;">
+              <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer;">
+                <input type="checkbox" id="agree-terms" checked style="margin-top:4px; width:18px; height:18px;"/>
+                <span style="font-size:0.85rem; color:#475569; line-height:1.5;">
+                  Tôi đồng ý để chuyên viên tư vấn VinFast Tây Sài Gòn liên hệ qua điện thoại/Zalo để tư vấn báo giá lăn bánh và hỗ trợ thủ tục.
+                </span>
+              </label>
+            </div>
+
+            <div class="vf-action-btns">
+              <button class="vf-btn-back" onclick="goToStep(2)">&larr; QUAY LẠI</button>
+              <button class="vf-btn-submit-order" id="btn-submit-booking" onclick="submitFinalBooking()">
+                🚀 GỬI YÊU CẦU CHO CHUYÊN VIÊN TƯ VẤN
+              </button>
             </div>
           </div>
 
-          <h3><span>2.</span> Tài Khoản Thụ Hưởng Đặt Cọc Chính Thức</h3>
-          <div style="background:#eff6ff; border:1.5px dashed #3b82f6; border-radius:14px; padding:20px; margin-bottom:25px;">
-            <div style="font-weight:800; color:#002a6c; font-size:1.1rem; margin-bottom:8px;">CÔNG TY TNHH TÂY SÀI GÒN</div>
-            <div style="font-size:0.95rem; color:#1e293b; margin-bottom:6px;">Ngân hàng: <strong>Vietcombank (Chi nhánh Tây Sài Gòn)</strong></div>
-            <div style="font-size:0.95rem; color:#1e293b; margin-bottom:6px;">Số tài khoản: <strong style="font-size:1.2rem; color:#1464f4; letter-spacing:1px;">0319066372</strong> (Mã số thuế công ty)</div>
-            <div style="font-size:0.85rem; color:#475569; margin-top:10px;">
-              Cú pháp chuyển khoản: <strong id="transfer-syntax" style="color:#002a6c; background:#fff; padding:3px 8px; border-radius:6px; border:1px solid #cbd5e1;">COC [SĐT] [XE]</strong>
+          <!-- SUCCESS CONFIRMATION BOX (HIDDEN INITIALLY) -->
+          <div id="order-success-section" style="display:none; text-align:center; padding:35px 20px; background:#fff; border-radius:18px; border:1.5px solid #86efac; box-shadow:0 10px 30px rgba(22,101,52,0.08);">
+            <div style="width:70px; height:70px; background:#dcfce7; color:#15803d; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; font-size:2.2rem; margin-bottom:16px;">
+              ✓
             </div>
-          </div>
+            <h3 style="color:#166534; font-size:1.6rem; font-weight:900; margin-bottom:8px;">GỬI YÊU CẦU THÀNH CÔNG!</h3>
+            <p style="color:#334155; font-size:1rem; line-height:1.6; max-width:600px; margin:0 auto 20px;">
+              Cảm ơn Quý khách <strong id="success-cust-name" style="color:#002a6c;">...</strong> đã quan tâm đến dòng xe <strong id="success-car-name" style="color:#1464f4;">...</strong>.<br/>
+              Chuyên viên tư vấn VinFast Tây Sài Gòn đã tiếp nhận nhu cầu và sẽ gọi tới số <strong id="success-cust-phone" style="color:#002a6c;">...</strong> trong vòng <strong>5 - 15 phút</strong> để gửi báo giá lăn bánh chi tiết kèm ưu đãi tháng mới nhất!
+            </p>
 
-          <div style="margin-bottom:25px;">
-            <label style="display:flex; align-items:flex-start; gap:10px; cursor:pointer;">
-              <input type="checkbox" id="agree-terms" checked style="margin-top:4px; width:18px; height:18px;"/>
-              <span style="font-size:0.85rem; color:#475569; line-height:1.5;">
-                Tôi đồng ý với <a href="/dieu-khoan-phap-ly.html" target="_blank" style="color:#1464f4; font-weight:700;">Điều khoản pháp lý</a> và <a href="/hop-dong-va-chinh-sach.html" target="_blank" style="color:#1464f4; font-weight:700;">Chính sách đặt cọc giữ xe</a> của CÔNG TY TNHH TÂY SÀI GÒN. Cam kết hoàn cọc 100% nếu đổi ý.
-              </span>
-            </label>
-          </div>
+            <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:20px;">
+              <a href="tel:0387775158" style="background:#1464f4; color:#fff; padding:12px 24px; border-radius:30px; font-weight:800; font-size:0.95rem; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                📞 GỌI NGAY CỬA HÀNG TRƯỞNG: 0387 775 158
+              </a>
+              <a href="https://zalo.me/1295417830975662535" target="_blank" style="background:#0068ff; color:#fff; padding:12px 24px; border-radius:30px; font-weight:800; font-size:0.95rem; text-decoration:none; display:inline-flex; align-items:center; gap:8px;">
+                💬 NHẮN ZALO TƯ VẤN NGAY
+              </a>
+            </div>
 
-          <div class="vf-action-btns">
-            <button class="vf-btn-back" onclick="goToStep(2)">&larr; QUAY LẠI</button>
-            <button class="vf-btn-submit-order" id="btn-submit-booking" onclick="submitFinalBooking()">
-              🚀 XÁC NHẬN HOÀN TẤT ĐẶT CỌC XE
-            </button>
+            <div style="margin-top:25px;">
+              <button onclick="resetOrderWizard()" style="background:#f1f5f9; border:1px solid #cbd5e1; color:#475569; padding:8px 20px; border-radius:20px; font-weight:700; cursor:pointer;">
+                🔄 Chọn cấu hình hoặc tham khảo dòng xe khác
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1423,13 +1480,13 @@ function validateAndGoToStep3() {
   // Populate confirm info
   document.getElementById('confirm-model-name').innerText = currentProduct.name;
   document.getElementById('confirm-color-name').innerText = currentColor.name;
-  document.getElementById('confirm-battery-type').innerText = (batteryOption === 'rent') ? 'Gói Thuê Pin' : 'Mua Đứt Pin LFP';
+  document.getElementById('confirm-battery-type').innerText = (batteryOption === 'rent') ? 'Gói Thuê Pin Tiết Kiệm' : 'Mua Đứt Pin LFP Chính Hãng';
   document.getElementById('confirm-cust-name').innerText = name;
   document.getElementById('confirm-cust-phone').innerText = phone;
+  document.getElementById('confirm-payment-method').innerText = document.getElementById('cust-payment-method').value;
+  document.getElementById('confirm-test-drive').innerText = document.getElementById('cust-test-drive').value;
+  document.getElementById('confirm-timeline').innerText = document.getElementById('cust-timeline').value;
   document.getElementById('confirm-showroom-name').innerText = document.getElementById('select-showroom').value;
-
-  const cleanPhone = phone.replace(/[^0-9]/g, '');
-  document.getElementById('transfer-syntax').innerText = `COC ${cleanPhone} ${currentProduct.name.replace(/[^a-zA-Z0-9]/g, '')}`;
 
   goToStep(3);
 }
@@ -1437,20 +1494,22 @@ function validateAndGoToStep3() {
 async function submitFinalBooking() {
   const agree = document.getElementById('agree-terms').checked;
   if (!agree) {
-    alert('Vui lòng đồng ý với điều khoản đặt cọc của đại lý.');
+    alert('Vui lòng xác nhận đồng ý để chuyên viên liên hệ hỗ trợ.');
     return;
   }
 
   const name = document.getElementById('cust-name').value.trim();
   const phone = document.getElementById('cust-phone').value.trim();
   const email = document.getElementById('cust-email').value.trim();
-  const cccd = document.getElementById('cust-id').value.trim();
+  const paymentMethod = document.getElementById('cust-payment-method').value;
+  const testDrive = document.getElementById('cust-test-drive').value;
+  const timeline = document.getElementById('cust-timeline').value;
   const showroom = document.getElementById('select-showroom').value;
   const note = document.getElementById('cust-note').value.trim();
 
   const btn = document.getElementById('btn-submit-booking');
   btn.disabled = true;
-  btn.innerText = '⏳ ĐANG XỬ LÝ ĐẶT CỌC...';
+  btn.innerText = '⏳ ĐANG GỬI THÔNG TIN...';
 
   const payload = {
     fullName: name,
@@ -1459,16 +1518,17 @@ async function submitFinalBooking() {
     model: currentProduct.name,
     color: currentColor.name,
     batteryOption: (batteryOption === 'rent') ? 'Thuê Pin' : 'Mua Pin',
+    paymentMethod: paymentMethod,
+    testDrive: testDrive,
+    timeline: timeline,
     showroom: showroom,
-    requestType: 'Đặt cọc mua xe trực tuyến',
-    cccd: cccd,
+    requestType: 'Đăng ký tư vấn & Báo giá xe máy điện',
     note: note,
-    depositAmount: '1.000.000 VNĐ',
     submittedAt: new Date().toISOString()
   };
 
   try {
-    // Save to localStorage
+    // Save to localStorage backup
     const saved = JSON.parse(localStorage.getItem('vinfast_leads') || '[]');
     saved.push(payload);
     localStorage.setItem('vinfast_leads', JSON.stringify(saved));
@@ -1482,10 +1542,24 @@ async function submitFinalBooking() {
     console.warn('API lead submission fallback:', e);
   }
 
-  alert(`🎉 CHÚC MỪNG QUÝ KHÁCH ${name.toUpperCase()}!\n\nYêu cầu đặt cọc giữ xe ${currentProduct.name} (${currentColor.name}) đã được gửi thành công đến hệ thống VinFast Tây Sài Gòn!\n\nCửa hàng trưởng sẽ gọi điện xác nhận trong 5 phút để kích hoạt phiếu thu cọc và hướng dẫn nhận xe.`);
-  
-  // Redirect to Zalo OA for immediate VIP assistance
-  window.location.href = 'https://zalo.me/1295417830975662535';
+  // Display success view right inside Step 3
+  document.getElementById('order-confirm-section').style.display = 'none';
+  const successSection = document.getElementById('order-success-section');
+  document.getElementById('success-cust-name').innerText = name;
+  document.getElementById('success-car-name').innerText = `${currentProduct.name} (${currentColor.name})`;
+  document.getElementById('success-cust-phone').innerText = phone;
+  successSection.style.display = 'block';
+
+  window.scrollTo({ top: 380, behavior: 'smooth' });
+}
+
+function resetOrderWizard() {
+  document.getElementById('order-confirm-section').style.display = 'block';
+  document.getElementById('order-success-section').style.display = 'none';
+  const btn = document.getElementById('btn-submit-booking');
+  btn.disabled = false;
+  btn.innerText = '🚀 GỬI YÊU CẦU CHO CHUYÊN VIÊN TƯ VẤN';
+  goToStep(1);
 }
 
 document.addEventListener('DOMContentLoaded', initOrderPage);
